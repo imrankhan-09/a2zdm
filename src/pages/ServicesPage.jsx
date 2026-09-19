@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
@@ -55,7 +55,7 @@ const CATEGORIES = [
   { id: "analytics", label: "Digital Analytics", Icon: BarChart3 },
   { id: "predictive", label: "Predictive Analytics", Icon: TrendingUp },
   { id: "bi", label: "Business Intelligence", Icon: Database },
-  { id: "ppc", label: "Pay Per Click Management", Icon: MousePointerClick },
+  { id: "ppc", label: "Pay Per Click", Icon: MousePointerClick },
 ];
 
 const RESULT_STATS = [
@@ -154,24 +154,19 @@ export default function ServicesPage() {
     }
   }, []);
 
-  const filteredServices =
-    activeCategory === "all"
-      ? ALL_SERVICES
-      : ALL_SERVICES.filter((s) => {
-          if (activeCategory === "aeo")
-            return s.category === "Answer Engine Optimization";
-          if (activeCategory === "seo")
-            return s.category === "Search Engine Optimization";
-          if (activeCategory === "analytics")
-            return s.category === "Digital Analytics";
-          if (activeCategory === "predictive")
-            return s.category === "Predictive Analytics";
-          if (activeCategory === "bi")
-            return s.category === "Business Intelligence";
-          if (activeCategory === "ppc")
-            return s.category === "Pay Per Click Management";
-          return true;
-        });
+  const filteredServices = useMemo(() => {
+    if (activeCategory === "all") return ALL_SERVICES;
+    return ALL_SERVICES.filter((s) => {
+      const cat = (s.category || "").toLowerCase();
+      if (activeCategory === "aeo") return cat.includes("answer engine");
+      if (activeCategory === "seo") return cat.includes("search engine");
+      if (activeCategory === "analytics") return cat === "digital analytics";
+      if (activeCategory === "predictive") return cat.includes("predictive");
+      if (activeCategory === "bi") return cat.includes("business intelligence");
+      if (activeCategory === "ppc") return cat.includes("pay per click");
+      return true;
+    });
+  }, [activeCategory]);
 
   return (
     <div className="bg-[#FBF8F3] text-[#17171F] overflow-x-clip">

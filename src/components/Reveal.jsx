@@ -25,21 +25,12 @@ export default function Reveal({
   );
 }
 
-/** Parent that staggers its children's Reveal animations. */
-export function RevealGroup({ children, className = "", stagger = 0.08 }) {
+/** Parent that wraps grid/card items for reveal animations. */
+export function RevealGroup({ children, className = "", stagger: _stagger = 0.08 }) {
   return (
-    <motion.div
-      className={className}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, margin: "-80px" }}
-      variants={{
-        hidden: {},
-        show: { transition: { staggerChildren: stagger } },
-      }}
-    >
+    <div className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }
 
@@ -47,14 +38,9 @@ export function RevealItem({ children, className = "", y = 18 }) {
   return (
     <motion.div
       className={className}
-      variants={{
-        hidden: { opacity: 0, y },
-        show: {
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
-        },
-      }}
+      initial={{ opacity: 0, y }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
     </motion.div>
