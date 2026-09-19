@@ -106,40 +106,23 @@ export default function Header() {
               onMouseEnter={openServices}
               onMouseLeave={scheduleClose}
             >
-              <div className="flex items-center">
-                <NavLink
-                  to="/services"
-                  onClick={() => setServicesOpen(false)}
-                  className={({ isActive }) =>
-                    `pl-4 pr-1.5 py-2 text-sm font-medium rounded-l-full transition-colors duration-200 ${
-                      isActive || servicesActive
-                        ? "bg-white/20 text-white font-semibold"
-                        : "text-white/80 hover:text-white hover:bg-white/10"
-                    }`
-                  }
-                >
-                  Services
-                </NavLink>
-                <button
-                  type="button"
-                  aria-label="Toggle services menu"
-                  aria-expanded={servicesOpen}
-                  onClick={() => setServicesOpen((v) => !v)}
-                  onFocus={openServices}
-                  className={`pr-3 py-2 rounded-r-full transition-colors duration-200 ${
-                    servicesActive
-                      ? "bg-white/20 text-white"
-                      : "text-white/80 hover:text-white hover:bg-white/10"
+              <NavLink
+                to="/services"
+                onClick={() => setServicesOpen(false)}
+                className={`inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-full transition-colors duration-200 ${
+                  servicesActive
+                    ? "bg-white/20 text-white font-semibold"
+                    : "text-white/80 hover:text-white hover:bg-white/10"
+                }`}
+              >
+                <span>Services</span>
+                <ChevronDown
+                  size={14}
+                  className={`transition-transform duration-200 ${
+                    servicesOpen ? "rotate-180" : ""
                   }`}
-                >
-                  <ChevronDown
-                    size={14}
-                    className={`transition-transform duration-200 ${
-                      servicesOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-              </div>
+                />
+              </NavLink>
 
               <AnimatePresence>
                 {servicesOpen && (

@@ -25,19 +25,19 @@ const CLIENTS = [
 const INDUSTRIES = [
   {
     icon: ShoppingCart,
-    gradient: "from-[#00C0F9] to-[#0072FF]",
+    badgeBg: "bg-[#0099FF]",
     title: "E-Commerce",
     body: "Specialized SEO and analytics for online stores and digital products",
   },
   {
     icon: Wrench,
-    gradient: "from-[#8B5CF6] to-[#6366F1]",
+    badgeBg: "bg-[#7356F9]",
     title: "Local Services",
     body: "Local SEO for service businesses",
   },
   {
     icon: Laptop,
-    gradient: "from-[#EC4899] to-[#8B5CF6]",
+    badgeBg: "bg-[#C844E8]",
     title: "SaaS & Tech",
     body: "Advanced analytics and growth marketing for tech companies",
   },
@@ -130,16 +130,16 @@ export default function ClientLogos() {
             const Icon = ind.icon;
             return (
               <RevealItem key={ind.title} className="h-full">
-                <div className="h-full rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center backdrop-blur-sm hover:border-white/20 hover:bg-white/[0.07] hover:-translate-y-1 transition-all duration-300 shadow-sm flex flex-col items-center">
+                <div className="h-full rounded-[24px] border border-white/[0.08] bg-[#1A1A24] py-12 px-6 sm:px-10 text-center hover:border-white/20 hover:bg-[#1E1E2B] hover:-translate-y-1 transition-all duration-300 shadow-[0_8px_30px_rgba(0,0,0,0.25)] flex flex-col items-center justify-center">
                   <div
-                    className={`w-14 h-14 rounded-full bg-gradient-to-br ${ind.gradient} text-white flex items-center justify-center mb-5 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.3)]`}
+                    className={`w-16 h-16 rounded-full ${ind.badgeBg} text-white flex items-center justify-center mb-7 shadow-md shrink-0`}
                   >
-                    <Icon size={24} />
+                    <Icon size={28} className="text-white" strokeWidth={1.8} />
                   </div>
-                  <h3 className="font-display font-bold text-xl text-white mb-2.5">
+                  <h3 className="font-display font-bold text-2xl sm:text-[28px] text-white mb-4 tracking-tight">
                     {ind.title}
                   </h3>
-                  <p className="text-sm text-white/70 leading-relaxed max-w-xs">
+                  <p className="text-[15px] sm:text-base text-white/60 leading-relaxed max-w-sm mx-auto">
                     {ind.body}
                   </p>
                 </div>
