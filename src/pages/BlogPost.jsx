@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight, CalendarDays, Clock, CheckCircle2 } from "lucide-react";
 import { BLOG_POSTS, ALL_BLOG_POSTS } from "../data/site";
@@ -8,7 +9,19 @@ import NotFound from "./NotFound";
 export default function BlogPost() {
   const { slug } = useParams();
   const pool = ALL_BLOG_POSTS || BLOG_POSTS;
-  const post = pool.find((p) => p.slug === slug || p.id === slug);
+  const post = pool.find(
+    (p) =>
+      p.slug === slug ||
+      p.id === slug ||
+      (p.aliases && p.aliases.includes(slug))
+  );
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (post) {
+      document.title = `${post.title} | A2ZDM Blog`;
+    }
+  }, [post, slug]);
 
   if (!post) {
     return <NotFound />;
@@ -63,7 +76,11 @@ export default function BlogPost() {
             {/* Author */}
             <div className="flex items-center gap-3 pb-8 mb-8 border-b border-[rgba(20,20,28,0.10)]">
               <div className="w-10 h-10 rounded-full bg-[#17171F] text-white flex items-center justify-center font-bold text-sm">
-                IP
+                {(post.author || "IP")
+                  .split(" ")
+                  .map((w) => w[0])
+                  .join("")
+                  .slice(0, 2)}
               </div>
               <div>
                 <div className="text-sm font-bold text-[#17171F]">{post.author}</div>
@@ -106,15 +123,139 @@ export default function BlogPost() {
             </Reveal>
           )}
 
-          {/* Article Body Overview */}
+          {/* Article Body Overview & Content */}
           <Reveal className="prose prose-slate max-w-none text-[#17171F] leading-relaxed space-y-6 text-base sm:text-lg">
-            <p className="text-xl font-medium text-[#17171F] leading-relaxed">
-              {post.excerpt}
-            </p>
-            {post.overview && (
-              <p className="text-base sm:text-lg text-[#5C5C6F] leading-relaxed">
-                {post.overview}
-              </p>
+            {post.content && post.content.length > 0 ? (
+              <div className="space-y-6 text-[#17171F]">
+                {post.content.map((block, idx) => {
+                  if (block.type === "h2") {
+                    return (
+                      <h2
+                        key={idx}
+                        className="font-display font-bold text-2xl sm:text-3xl text-[#17171F] pt-6 pb-2 border-b border-[rgba(20,20,28,0.08)] tracking-tight leading-snug"
+                      >
+                        {block.text}
+                      </h2>
+                    );
+                  }
+                  if (block.type === "h3") {
+                    return (
+                      <h3
+                        key={idx}
+                        className="font-display font-bold text-xl sm:text-2xl text-[#17171F] pt-4 pb-1"
+                      >
+                        {block.text}
+                      </h3>
+                    );
+                  }
+                  if (block.type === "p") {
+                    return (
+                      <p
+                        key={idx}
+                        className="text-base sm:text-lg text-[#3F3F4E] leading-relaxed"
+                      >
+                        {block.boldPrefix && (
+                          <strong className="text-[#17171F] font-bold mr-1">
+                            {block.boldPrefix}
+                          </strong>
+                        )}
+                        {block.text}
+                      </p>
+                    );
+                  }
+                  if (block.type === "image") {
+                    return (
+                      <div
+                        key={idx}
+                        className="my-8 rounded-2xl overflow-hidden border border-[rgba(20,20,28,0.10)] bg-[#F3EEE1] shadow-xs"
+                      >
+                        <img
+                          src={block.src}
+                          alt={block.alt || "Article illustration"}
+                          className="w-full h-auto object-cover max-h-[480px]"
+                          onError={(e) => {
+                            e.currentTarget.style.display = "none";
+                          }}
+                        />
+                        {block.caption && (
+                          <p className="text-xs text-center text-[#5C5C6F] py-2 px-4 italic">
+                            {block.caption}
+                          </p>
+                        )}
+                      </div>
+                    );
+                  }
+                  if (block.type === "ul") {
+                    return (
+                      <ul
+                        key={idx}
+                        className="space-y-2.5 my-4 list-disc pl-6 text-base sm:text-lg text-[#3F3F4E] leading-relaxed"
+                      >
+                        {block.items.map((item, itemIdx) => (
+                          <li key={itemIdx}>{item}</li>
+                        ))}
+                      </ul>
+                    );
+                  }
+                  if (block.type === "ol") {
+                    return (
+                      <ol
+                        key={idx}
+                        className="space-y-2.5 my-4 list-decimal pl-6 text-base sm:text-lg text-[#3F3F4E] leading-relaxed"
+                      >
+                        {block.items.map((item, itemIdx) => {
+                          if (typeof item === "string" && item.startsWith("http")) {
+                            return (
+                              <li key={itemIdx}>
+                                <a
+                                  href={item}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-[#2F6F5E] hover:text-[#17171F] hover:underline underline-offset-4 font-medium inline-flex items-center gap-1 break-all"
+                                >
+                                  {item} <ArrowUpRight size={13} className="shrink-0 inline" />
+                                </a>
+                              </li>
+                            );
+                          }
+                          return <li key={itemIdx}>{item}</li>;
+                        })}
+                      </ol>
+                    );
+                  }
+                  if (block.type === "tags") {
+                    return (
+                      <div key={idx} className="pt-6 mt-8 border-t border-[rgba(20,20,28,0.10)]">
+                        <div className="text-xs font-semibold uppercase tracking-wider text-[#5C5C6F] mb-3">
+                          Tags
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          {block.items.map((tag, tIdx) => (
+                            <span
+                              key={tIdx}
+                              className="text-xs font-medium text-[#17171F] bg-[#F3EEE1] border border-[rgba(20,20,28,0.12)] px-3 py-1.5 rounded-full"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    );
+                  }
+                  return null;
+                })}
+              </div>
+            ) : (
+              <>
+                <p className="text-xl font-medium text-[#17171F] leading-relaxed">
+                  {post.excerpt}
+                </p>
+                {post.overview && (
+                  <p className="text-base sm:text-lg text-[#5C5C6F] leading-relaxed">
+                    {post.overview}
+                  </p>
+                )}
+              </>
             )}
 
             {/* Read on live site attribution */}

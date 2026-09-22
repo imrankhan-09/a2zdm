@@ -192,7 +192,7 @@ export default function Footer() {
             ))}
           </ul>
           <div className="text-center text-sm text-white/50">
-            © 2024 A2ZDM Pvt. Ltd. All rights reserved.
+            © 2026 A2ZDM Pvt. Ltd. All rights reserved.
           </div>
         </div>
       </div>

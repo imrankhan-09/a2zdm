@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import CaseStudies from "./pages/CaseStudies";
+import CaseStudyDetail from "./pages/CaseStudyDetail";
 import ServicesPage from "./pages/ServicesPage";
 import ServiceDetail from "./pages/ServiceDetail";
 import Contact from "./pages/Contact";
@@ -35,6 +36,7 @@ export default function App() {
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/case-studies" element={<CaseStudies />} />
+              <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/services/:slug" element={<ServiceDetail />} />
               <Route path="/contact" element={<Contact />} />

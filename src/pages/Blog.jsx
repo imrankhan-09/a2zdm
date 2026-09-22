@@ -6,7 +6,7 @@ import CTASection from "../components/CTASection";
 import Reveal, { RevealGroup } from "../components/Reveal";
 import { BLOG_FILTERS, BLOG_POSTS, blogBucket } from "../data/site";
 
-const PAGE_SIZE = 8;
+const PAGE_SIZE = 6;
 
 export default function Blog() {
   const [filter, setFilter] = useState("All");
