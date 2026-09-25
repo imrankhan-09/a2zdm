@@ -33,7 +33,7 @@ const SERVICES = [
     icon: Leaf,
     kicker: "Search Engine Optimization",
     title: "CBD SEO",
-    body: "Build the brand's identity with support of a leading Cannabis SEO company. If you have a Cannabis dispensary, Medical Marijuana certificate service, or Cannabis delivery service, consult our cannabis SEO experts and gain valuable insights. We provide legally compliant keyword research, digital PR, influencer outreach, and competitor research to help create a significant online presence and establish credible brand authority.",
+    body: "Build search visibility for CBD businesses with compliant keyword targeting, content optimization, technical SEO, and organic growth strategies.",
     to: "/services/cbd-seo",
     image: "https://a2zdm.com/cbd-seo.jpg",
   },

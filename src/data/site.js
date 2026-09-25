@@ -145,7 +145,7 @@ export const ALL_SERVICES = [
     name: "Search Engine Optimization",
     seoTitle: "SEO Services | Search Engine Optimization Company | A2ZDM",
     metaDescription:
-      "Grow your online visibility with A2ZDM's SEO services. Improve search rankings, attract qualified organic traffic, and build sustainable business growth.",
+      "Grow your online visibility with A2ZDM’s SEO services. Improve search rankings, attract qualified organic traffic, and build sustainable business growth.",
     category: "Search Engine Optimization",
     short: "Rank higher and earn qualified organic traffic.",
     description:
@@ -1976,7 +1976,7 @@ export const ALL_SERVICES = [
     metaDescription:
       "Manage cookies and consent with solutions designed for GDPR compliance. Improve transparency, user control, and privacy across your website with A2ZDM.",
     category: "Digital Analytics",
-    short: "Achieve GDPR and global privacy compliance.",
+    short: "Manage website cookies and consent.",
     description:
       "Manage website cookies and consent while improving transparency, user control, privacy, and tracking compliance.",
     Icon: Cookie,
@@ -2008,7 +2008,7 @@ export const ALL_SERVICES = [
     name: "Tag Monitoring",
     seoTitle: "Tag Monitoring and Response Management Solutions - A2ZDM",
     metaDescription:
-      "Monitor website tags and respond to tracking issues with A2ZDM's tag monitoring solutions. Improve tag accuracy, tracking reliability, and data quality.",
+      "Monitor website tags and respond to tracking issues with A2ZDM’s tag monitoring solutions. Improve tag accuracy, tracking reliability, and data quality.",
     category: "Digital Analytics",
     short: "Continuous monitoring of tracking technologies.",
     description:
