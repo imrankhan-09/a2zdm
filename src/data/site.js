@@ -106,10 +106,13 @@ export const ALL_SERVICES = [
     slug: "answer-engine-optimization",
     aliases: ["aeo"],
     name: "Answer Engine Optimization",
+    seoTitle: "Answer Engine Optimization (AEO) Services | A2ZDM",
+    metaDescription:
+      "Improve your visibility across AI search and answer engines with AEO services focused on content, entity optimization, structured data, and answer visibility.",
     category: "Answer Engine Optimization",
     short: "Get cited by AI answers and voice assistants.",
     description:
-      "Go beyond just ranking—get directly cited inside AI chats, conversational models, and modern AI Overviews.",
+      "Improve your visibility across AI search and answer engines with expert AEO strategies focused on content, entities, structured data, and answer visibility.",
     Icon: Sparkles,
     visualType: "aeo",
     image: "https://a2zdm.com/search.jpg",
@@ -140,10 +143,13 @@ export const ALL_SERVICES = [
     slug: "search-engine-optimization",
     aliases: ["seo"],
     name: "Search Engine Optimization",
+    seoTitle: "SEO Services | Search Engine Optimization Company | A2ZDM",
+    metaDescription:
+      "Grow your online visibility with A2ZDM's SEO services. Improve search rankings, attract qualified organic traffic, and build sustainable business growth.",
     category: "Search Engine Optimization",
     short: "Rank higher and earn qualified organic traffic.",
     description:
-      "Comprehensive search engine optimization strategies that combine technical hygiene, search intent alignment, and high-impact authority building.",
+      "Grow your online visibility with SEO strategies designed to improve rankings, attract qualified organic traffic, and support sustainable business growth.",
     Icon: Search,
     visualType: "seo",
     image: "https://a2zdm.com/techseo.jpg",
@@ -1966,10 +1972,13 @@ export const ALL_SERVICES = [
     slug: "cookie-consent-management",
     aliases: ["cookie-consent", "consent-mode"],
     name: "Cookie Consent Management",
+    seoTitle: "Cookie Consent Management for Google Analytics (GA4) & Ads",
+    metaDescription:
+      "Manage cookies and consent with solutions designed for GDPR compliance. Improve transparency, user control, and privacy across your website with A2ZDM.",
     category: "Digital Analytics",
     short: "Achieve GDPR and global privacy compliance.",
     description:
-      "Implement enterprise-grade cookie consent solutions and Google Consent Mode v2 to protect against fines while maximizing conversion attribution.",
+      "Manage website cookies and consent while improving transparency, user control, privacy, and tracking compliance.",
     Icon: Cookie,
     visualType: "analytics",
     challenge:
@@ -1997,10 +2006,13 @@ export const ALL_SERVICES = [
     slug: "tag-monitoring",
     aliases: ["tag-audit"],
     name: "Tag Monitoring",
+    seoTitle: "Tag Monitoring and Response Management Solutions - A2ZDM",
+    metaDescription:
+      "Monitor website tags and respond to tracking issues with A2ZDM's tag monitoring solutions. Improve tag accuracy, tracking reliability, and data quality.",
     category: "Digital Analytics",
     short: "Continuous monitoring of tracking technologies.",
     description:
-      "Continuous automated synthetic monitoring of your website's tracking scripts to catch data loss, tag failures, and broken analytics before they affect decisions.",
+      "Monitor website tags, detect tracking issues, and improve tag accuracy, tracking reliability, and data quality.",
     Icon: ShieldCheck,
     visualType: "analytics",
     challenge:
@@ -2030,10 +2042,13 @@ export const ALL_SERVICES = [
     slug: "predictive-analytics",
     aliases: ["predictive"],
     name: "Predictive Analytics",
+    seoTitle: "Predictive Analytics Services | Forecasting & Insights | A2ZDM",
+    metaDescription:
+      "Leverage predictive analytics to forecast future trends, identify business patterns, mitigate risks, optimize marketing, and make data-driven decisions with A2ZDM.",
     category: "Predictive Analytics",
     short: "Forecast demand and act before competitors.",
     description:
-      "Leverage machine learning algorithms and statistical models on your historical data to anticipate market trends, customer behavior, and future revenue.",
+      "Use predictive analytics to forecast trends, identify business patterns, reduce risks, and make smarter data-driven decisions.",
     Icon: TrendingUp,
     visualType: "predictive",
     challenge:
@@ -2061,10 +2076,13 @@ export const ALL_SERVICES = [
     slug: "customer-segmentation",
     aliases: ["segmentation"],
     name: "Customer Segmentation",
+    seoTitle: "Customer Segmentation Services | Data-Driven Audience Insights | A2ZDM",
+    metaDescription:
+      "Use customer segmentation to identify audience groups, understand customer behavior, personalize marketing, and make data-driven business decisions with A2ZDM.",
     category: "Predictive Analytics",
     short: "Divide customers into strategic groups for targeted marketing.",
     description:
-      "Segment your audience by behavioral patterns, purchasing history, and lifetime value to drive personalized campaigns with higher conversion rates.",
+      "Identify valuable customer groups, understand behavior, personalize marketing, and improve decisions with data-driven segmentation.",
     Icon: Target,
     visualType: "predictive",
     challenge:
@@ -2092,10 +2110,13 @@ export const ALL_SERVICES = [
     slug: "sales-forecasting",
     aliases: ["forecasting"],
     name: "Sales Forecasting",
+    seoTitle: "Sales Forecasting Services | Predictive Business Insights | A2ZDM",
+    metaDescription:
+      "Improve sales planning with data-driven forecasting. Identify sales trends, anticipate demand, and make informed business decisions with A2ZDM.",
     category: "Predictive Analytics",
     short: "Predict future revenue with 90%+ accuracy using AI models.",
     description:
-      "Predict future revenue, demand spikes, and pipeline velocity using machine learning models factoring in seasonality, economic indicators, and past performance.",
+      "Improve sales planning by forecasting demand, identifying sales trends, and making informed business decisions.",
     Icon: BrainCircuit,
     visualType: "predictive",
     challenge:
@@ -2125,10 +2146,13 @@ export const ALL_SERVICES = [
     slug: "business-intelligence",
     aliases: ["bi"],
     name: "Business Intelligence",
+    seoTitle: "Best Business Intelligence Services | A2ZDM",
+    metaDescription:
+      "Use business intelligence solutions to transform business data into actionable insights and support better data-driven decisions.",
     category: "Business Intelligence",
     short: "One view of marketing, sales and revenue.",
     description:
-      "Centralize your scattered data silos into modern warehouses and intuitive BI dashboards that connect marketing clicks directly to company revenue.",
+      "Transform business data into actionable insights with business intelligence solutions, reporting, dashboards, and data-driven analysis.",
     Icon: Database,
     visualType: "bi",
     challenge:
@@ -2360,10 +2384,13 @@ export const ALL_SERVICES = [
     slug: "power-bi",
     aliases: ["microsoft-power-bi"],
     name: "Power BI",
+    seoTitle: "Power BI Consulting Services | Business Intelligence | A2ZDM",
+    metaDescription:
+      "Turn business data into actionable insights with Power BI consulting services. Build interactive dashboards, reports, and data visualizations with A2ZDM.",
     category: "Business Intelligence",
     short: "Enterprise-grade data modeling and visual analytics.",
     description:
-      "Enterprise Microsoft Power BI architecture, DAX data modeling, and embedded analytics deeply integrated with Azure and Microsoft 365 ecosystems.",
+      "Turn complex business data into actionable insights with interactive Power BI dashboards, reports, and visualizations.",
     Icon: BarChart3,
     visualType: "bi",
     challenge:
@@ -2391,10 +2418,13 @@ export const ALL_SERVICES = [
     slug: "python-for-bi",
     aliases: ["python-bi", "python-analytics"],
     name: "Python for BI",
+    seoTitle: "Python for Business Intelligence | BI & Data Analytics | A2ZDM",
+    metaDescription:
+      "Use Python for business intelligence, data analysis, automation, and advanced reporting. Turn complex business data into actionable insights with A2ZDM.",
     category: "Business Intelligence",
     short: "Leverage Python's data ecosystem for custom analytics.",
     description:
-      "Use Python's powerful data science libraries (Pandas, NumPy, Scikit-learn) to automate complex data workflows, web scraping, and custom BI pipelines.",
+      "Use Python for business intelligence, data analysis, automation, and advanced reporting to uncover actionable insights.",
     Icon: Code2,
     visualType: "bi",
     challenge:
@@ -2424,10 +2454,13 @@ export const ALL_SERVICES = [
     slug: "pay-per-click-management",
     aliases: ["ppc", "pay-per-click"],
     name: "Pay Per Click Management",
+    seoTitle: "Pay Per Click Advertising Management Services | A2ZDM",
+    metaDescription:
+      "Drive targeted traffic and sales with professional Pay-Per-Click advertising management focused on campaign performance, optimization, and measurable results.",
     category: "Pay Per Click Management",
     short: "Paid campaigns managed for measurable ROAS.",
     description:
-      "Data-driven paid search and social advertising campaigns built around rigorous audience targeting, continuous creative testing, and transparent ROAS.",
+      "Manage and optimize PPC campaigns to drive targeted traffic, improve campaign performance, and support measurable business growth.",
     Icon: MousePointerClick,
     visualType: "ppc",
     challenge:
@@ -2455,10 +2488,13 @@ export const ALL_SERVICES = [
     slug: "performance-measurement",
     aliases: ["marketing-attribution", "ad-performance"],
     name: "Performance Measurement",
+    seoTitle: "Performance Measurement Services | A2ZDM",
+    metaDescription:
+      "Measure marketing and business performance with reliable analytics, reporting, and actionable insights to support better data-driven decisions.",
     category: "Pay Per Click Management",
     short: "Advanced frameworks to quantify and optimize marketing ROI.",
     description:
-      "Advanced marketing attribution and incrementality measurement frameworks to accurately quantify marketing ROI across all paid channels.",
+      "Measure marketing and business performance with analytics, reporting, and actionable insights for better decision-making.",
     Icon: Wallet,
     visualType: "ppc",
     challenge:
@@ -2488,10 +2524,13 @@ export const ALL_SERVICES = [
     slug: "cbd-seo",
     aliases: ["cannabis-seo", "marijuana-seo", "hemp-seo"],
     name: "CBD SEO",
+    seoTitle: "SEO Services Agency for CBD Industry",
+    metaDescription:
+      "Grow your CBD business with SEO services focused on search visibility, compliant keyword targeting, content optimization, technical SEO, and organic growth.",
     category: "Search Engine Optimization",
     short: "Build brand authority in the Cannabis & CBD marketplace.",
     description:
-      "Build the brand's identity with support of a leading Cannabis SEO company. If you have a Cannabis dispensary, Medical Marijuana certificate service, or Cannabis delivery service, consult our cannabis SEO experts and gain valuable insights. We provide legally compliant keyword research, digital PR, influencer outreach, and competitor research to help create a significant online presence and establish credible brand authority.",
+      "Build search visibility for CBD businesses with compliant keyword targeting, content optimization, technical SEO, and organic growth strategies.",
     Icon: Search,
     visualType: "cbd",
     includes: [
