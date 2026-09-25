@@ -26,23 +26,25 @@ export default function Reveal({
 }
 
 /** Parent that wraps grid/card items for reveal animations. */
-export function RevealGroup({ children, className = "", stagger: _stagger = 0.08 }) {
-  return (
-    <div className={className}>
-      {children}
-    </div>
-  );
+export function RevealGroup({
+  children,
+  className = "",
+  stagger: _stagger = 0.08,
+  as: Component = "div",
+}) {
+  return <Component className={className}>{children}</Component>;
 }
 
-export function RevealItem({ children, className = "", y = 18 }) {
+export function RevealItem({ children, className = "", y = 18, as = "div" }) {
+  const MotionTag = motion[as] || motion.div;
   return (
-    <motion.div
+    <MotionTag
       className={className}
       initial={{ opacity: 0, y }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
-    </motion.div>
+    </MotionTag>
   );
 }

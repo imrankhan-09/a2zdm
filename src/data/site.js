@@ -172,403 +172,1435 @@ export const ALL_SERVICES = [
     slug: "technical-seo",
     aliases: ["tech-seo"],
     name: "Technical SEO",
+    h1: "Technical SEO",
+    seoTitle: "Unlock Remarkable Growth with SEO Audit Experts in Indore",
+    metaDescription:
+      "Struggling with site issues. Get expert technical SEO audit services in Indore. Fix site speed, indexing, and crawl issues. Talk to a Technical SEO Specialist today.",
+    canonicalUrl: "https://www.a2zdm.com/services/technical-seo/",
+    altText: "Technical seo services",
+    altTextOptions: [
+      "Technical seo services",
+      "Technical seo agency",
+      "Crawlability and indexing",
+    ],
     category: "Search Engine Optimization",
-    short: "Optimize your website foundation for crawlability and speed.",
+    short: "Improve searchability of your website with competence of technical SEO.",
+    subheadline:
+      "Improve searchability of your website with competence of technical SEO.",
+    introduction:
+      "A website with an interactive and engaging interface is of no use, if website’s technicalities aren’t top notched. Thus, clear your website from all technical glitches and make it easy to navigate.",
     description:
-      "Optimize your website's technical foundation to ensure seamless crawling, rapid indexing, and exceptional Core Web Vitals.",
+      "A website with an interactive and engaging interface is of no use, if website’s technicalities aren’t top notched. Thus, clear your website from all technical glitches and make it easy to navigate.",
     Icon: Gauge,
     visualType: "seo",
     image: "https://a2zdm.com/techseo.jpg",
-    challenge:
-      "Javascript rendering delays, complex redirection chains, slow server response times, and poor mobile performance silently destroy search rankings before your content even gets evaluated.",
+    whyMatters: {
+      heading: "Why Technical SEO Matters?",
+      content:
+        "Technical SEO improves website’s architecture, fixes code, and takes care of other technical elements for the site to crawl and index in search engine. In short, technical SEO focuses on foundation of website. By optimizing the website’s infrastructure, one improves functionality and user interface.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Fixing Crawl Errors",
+        "Resolve on-site issues",
+        "Sitemap Optimization",
+        "Internal Linking",
+        "Changing Duplicate Content",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Technical SEO Audits",
+        "HTTPS Implementation",
+        "URL Structure & XML Site Optimization",
+        "Robots.txt Optimization",
+        "Structured Data Markup",
+        "Updated Sitemap",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Businesses of All Sizes",
+        "E-commerce Websites",
+        "Content Creators & Publishers",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Higher Ranking in Search Engine",
+        "Increased Organic Traffic",
+        "Improved User Experience",
+        "Enhanced Website Speed",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Save your valuable time by getting technical SEO service outsourced",
+        "Expert Technical SEO team",
+        "Experienced & Specialized SEO team",
+        "Availability of Advanced SEO tools & techniques",
+      ],
+    },
+    ctaText:
+      "Connect our competent team and get the SEO audit done. Book the appointment today and receive prompt response.",
     includes: [
-      "Improved search engine rankings through clean indexation",
-      "Better user experience and lower bounce rates",
-      "Faster page load times passing Core Web Vitals",
-      "Enhanced mobile crawling and responsive rendering",
-    ],
-    methodology: [
-      { step: "01", title: "Server Log & Crawl Diagnostic", desc: "Identify crawl budget waste, 4xx/5xx errors, and redirect loops." },
-      { step: "02", title: "Core Web Vitals Remediation", desc: "Optimize LCP, INP, and CLS metrics across desktop and mobile devices." },
-      { step: "03", title: "Architecture & Hierarchy", desc: "Flatten click depth, streamline XML sitemaps, and optimize robots directives." },
-      { step: "04", title: "Structured Data Implementation", desc: "Deploy semantic schema to unlock rich snippets and search features." },
-    ],
-    deliverables: [
-      "Full Technical Health Scorecard",
-      "Core Web Vitals Optimization Plan",
-      "XML Sitemap & Robots.txt Architecture",
-      "Schema.org Validation & Markup",
+      "Technical SEO Audits",
+      "HTTPS Implementation",
+      "URL Structure & XML Site Optimization",
+      "Robots.txt Optimization",
+      "Structured Data Markup",
+      "Updated Sitemap",
     ],
   },
   {
     slug: "link-earning",
     aliases: ["link-building"],
-    name: "Link-Earning",
+    name: "Link Earning",
+    h1: "Link Earning",
+    seoTitle: "Grow Your Brand with Natural Link Earning Strategies",
+    metaDescription:
+      "We help your brand earn backlinks that matter. Through authentic outreach and content, we build connections that strengthen your online presence.",
+    canonicalUrl: "https://www.a2zdm.com/services/link-earning/",
+    altText: "Natural link earning",
+    altTextOptions: [
+      "Natural link earning",
+      "Grow brand authority",
+      "Quality backlinks",
+    ],
     category: "Search Engine Optimization",
-    short: "Boost authority with high-quality, ethical backlinks.",
+    short: "Earn money by sharing links and attract organic traffic",
+    subheadline: "Earn money by sharing links and attract organic traffic",
+    introduction:
+      "Create valuable content and attract links from other websites. Earning links is an edge towards gaining brand reputation which further boosts search engine rankings. Thus, build relationships and create brand awareness.",
     description:
-      "Boost your domain authority with high-quality backlinks earned through ethical, data-backed research and strategic industry outreach.",
+      "Create valuable content and attract links from other websites. Earning links is an edge towards gaining brand reputation which further boosts search engine rankings. Thus, build relationships and create brand awareness.",
     Icon: Link2,
     visualType: "seo",
-    challenge:
-      "Low-quality automated link schemes incur severe Google penalties, while acquiring legitimate, authoritative editorial links requires valuable content assets and dedicated outreach.",
+    image: "https://a2zdm.com/link-earning.jpg",
+    whyMatters: {
+      heading: "Why Link Earning Matters?",
+      content:
+        "Improve your brand’s credibility as we drive links to your valuable content. Sharing high quality content on different online platforms and communities generates backlinks naturally. Sharing content’s link to authoritative sites derives shared benefit to any website. Furthermore, this organic SEO approach brings about long term results and benefits.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Promoting Content on Social Media Sites & Online Community",
+        "Placing Interactive Infographics in Content",
+        "Include Meta titles, description, keywords",
+        "Publish Press Release",
+        "Consistent Content Engagement",
+        "Guest Blogging",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Increased Online Traffic",
+        "Long term SEO benefit",
+        "Referral Traffic",
+        "Quick Indexing",
+        "Improved Engagement on Content",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Websites Looking for Organic Traffic",
+        "Content Creators",
+        "Freelancers",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Attract Natural Backlinks",
+        "Higher Search Engine Rankings",
+        "Improved Online Visibility",
+        "Enhanced Brand Reputation",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Trusted & Recognized SEO Solution Provider",
+        "Reliable SEO Team",
+        "Years of Experience",
+        "Tailored Solutions as per Customer’s Requirement",
+      ],
+    },
+    ctaText:
+      "Connect our authentic SEO team and generate trusted links. Book an appointment and get the work started.",
     includes: [
-      "Increased domain authority and trust signals",
-      "Higher rankings for competitive commercial keywords",
-      "Sustainable referral traffic from relevant publications",
-      "Enhanced industry credibility and brand visibility",
-    ],
-    methodology: [
-      { step: "01", title: "Competitor Backlink Analysis", desc: "Uncover backlink gaps and high-authority referring domain opportunities." },
-      { step: "02", title: "Linkable Asset Development", desc: "Produce proprietary data studies, guides, and visual infographics journalists cite." },
-      { step: "03", title: "Personalized Outreach", desc: "Connect with relevant editors, industry reporters, and authoritative niche publications." },
-      { step: "04", title: "Profile Quality Monitoring", desc: "Regularly audit link velocity, toxicity scores, and anchor text distribution." },
-    ],
-    deliverables: [
-      "Backlink Gap Analysis Report",
-      "Quarterly Linkable Content Assets",
-      "Monthly Editorial Placement Reports",
-      "Disavow & Toxic Link Health Reviews",
+      "Increased Online Traffic",
+      "Long term SEO benefit",
+      "Referral Traffic",
+      "Quick Indexing",
+      "Improved Engagement on Content",
     ],
   },
   {
     slug: "pr-industry-seo",
     aliases: ["public-relations", "pr-seo"],
-    name: "Public Relations",
+    name: "PR Industry SEO",
+    h1: "PR Industry SEO",
+    seoTitle: "Strategic PR Services to Elevate Your Brand Reputation",
+    metaDescription:
+      "Build trust and credibility with our PR services. We craft stories that connect with your audience, boost visibility, and strengthen brand reputation.",
+    canonicalUrl: "https://www.a2zdm.com/services/pr-industry-seo/",
+    altText: "PR services",
+    altTextOptions: [
+      "PR services",
+      "Brand reputation management",
+      "Public relations strategy",
+    ],
     category: "Search Engine Optimization",
     short: "Strategically influence your brand perception through PR.",
+    subheadline: "Strategically Influence your Brand Perception through Public Relations",
+    introduction:
+      "Build your brand’s reputation with positive public image. Communicate your business goals through Public Relations activities. Moreover, shape your brand’s public image and gain brand visibility among target audience.",
     description:
-      "Strategically influence your brand perception, gain editorial media mentions, and build organic authority through targeted digital public relations.",
+      "Build your brand’s reputation with positive public image. Communicate your business goals through Public Relations activities. Moreover, shape your brand’s public image and gain brand visibility among target audience.",
     Icon: Globe,
     visualType: "seo",
     image: "https://a2zdm.com/pr.jpg",
-    challenge:
-      "Securing genuine media coverage requires newsworthy narratives, strong press relationships, and a coherent distribution strategy aligned with brand positioning.",
-    includes: [
-      "Authentic editorial backlinks from news outlets",
-      "Enhanced brand credibility and third-party validation",
-      "Stronger organic search rankings through brand mentions",
-      "Enriched industry visibility and stakeholder trust",
-    ],
-    methodology: [
-      { step: "01", title: "Story Ideation & Angle Mining", desc: "Extract unique industry insights and corporate milestones for press pitches." },
-      { step: "02", title: "Media Roster Curation", desc: "Build targeted media lists of trade publications, journalists, and podcasts." },
-      { step: "03", title: "Press Release & Pitch Distribution", desc: "Execute targeted media outreach with compelling news hooks and embargoes." },
-      { step: "04", title: "Entity & Coverage Tracking", desc: "Monitor brand mentions, referral traffic, and search authority lift." },
-    ],
-    deliverables: [
-      "Press Kit & Media Pitch Decks",
-      "Targeted Media Distribution Campaigns",
-      "Published Press Clippings & Coverage Reports",
-      "Digital PR Impact & Authority Metrics",
+    whyMatters: {
+      heading: "Why Public Relations Matters?",
+      content:
+        "Establish brand’s trust and authority through Public Relations. Public Relations is much more effective than regular advertising. Through media relations and community management, create impressive brand image.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Content Promotions",
+        "Press Releases",
+        "Media Relations",
+        "Social Media Management",
+        "Influencer Marketing",
+        "Brand Reputation Management",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Organic Traffic",
+        "Positive Brand Image",
+        "Relationship Building",
+        "Brand Awareness",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Businesses",
+        "Individuals",
+        "Government Entities",
+        "Non Profit Organizations",
+        "Fund raising Organizations",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Authentic Backlinks",
+        "Brand Credibility",
+        "Enhanced Search Engine Ranking",
+        "Enriched Brand Visibility",
+        "Media Coverage",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Years of Experience",
+        "Expertise & Skill",
+        "Dedicated Team",
+        "Personalized Approach",
+      ],
+    },
+    ctaText:
+      "Connect our team of Public Relations and create long term, positive impact of your brand.",
+    faqHeading: "FAQs on Public Relations",
+    faqs: [
+      {
+        question: "How can I measure Public Relations Result?",
+        answer:
+          "There are multiple ways to measure Public Relations result. Assess website traffic, conduct sentiment analysis and review media mentions.",
+      },
+      {
+        question: "What are the main components of PR activities?",
+        answer:
+          "The main components of PR activities are content sharing, media relations, and brand reputation management.",
+      },
+      {
+        question: "Are PR Strategies same for all kinds of industries?",
+        answer:
+          "A PR strategy varies from industry to industry. Most importantly, PR strategy is unique and tailored to client’s specific business goals.",
+      },
+      {
+        question: "Is data important for Public Relations?",
+        answer:
+          "Having the availability of insightful business data helps in formulating effective PR strategies as it’s beneficial for identifying trends, consumer behavior and preferences.",
+      },
+      {
+        question: "Do I require PR for a small company?",
+        answer:
+          "PR is an important aspect of digital marketing. Irrespective of company size, PR is helpful in gaining brand reputation and awareness.",
+      },
+      {
+        question: "What are the 4Ps of Public Relation?",
+        answer:
+          "The 4Ps of Public Relation are Publicity, Public Perception, Promotion & Persuasion.",
+      },
+      {
+        question: "What is the difference between PR and advertising?",
+        answer:
+          "PR focuses on building relationships and in turn generating credibility for a brand whereas advertising aims towards marketing of products and services for buying and selling.",
+      },
     ],
   },
   {
     slug: "ecommerce-seo",
     aliases: ["e-commerce-seo"],
-    name: "Ecommerce SEO",
+    name: "E-Commerce SEO",
+    h1: "E- Commerce SEO",
+    seoTitle: "Best e-commerce seo agency in India - A2ZDM",
+    metaDescription:
+      "Transform your e-commerce business with A2ZDM, the top SEO agency in India. Unlock growth and maximize your online potential with our tailored solutions.",
+    canonicalUrl: "https://www.a2zdm.com/services/ecommerce-seo/",
+    altText: "Optimized product page from our e-commerce SEO service.",
+    altTextOptions: [
+      "Optimized product page from our e-commerce SEO service.",
+      "Driving e-commerce sales with expert product page and on-page SEO.",
+      "A data-driven e-commerce SEO strategy developed by our experts.",
+    ],
     category: "Search Engine Optimization",
-    short: "Drive organic shoppers to product and category pages.",
+    short: "Sell products and services with e-commerce SEO.",
+    subheadline: "Sell products and services with e-commerce SEO.",
+    introduction:
+      "Optimize your e-commerce brand’s online visibility and generate organic traffic. Likely, with increased online reach, maximize ROI.",
     description:
-      "Enhance product discoverability and drive revenue across your category and product pages with tailored e-commerce search strategies.",
+      "Optimize your e-commerce brand’s online visibility and generate organic traffic. Likely, with increased online reach, maximize ROI.",
     Icon: ShoppingCart,
     visualType: "seo",
-    challenge:
-      "Large product catalogs frequently suffer from duplicate descriptions, thin category pages, faceted navigation indexing traps, and high cart abandonment.",
+    image: "https://a2zdm.com/ecommerce-seo.jpg",
+    whyMatters: {
+      heading: "Why E-Commerce SEO Matters?",
+      content:
+        "E-commerce SEO is a primary prerequisite for attaining higher ranking in search engine. Additionally with improved webpage speed and mobile optimized site, it’s easy to provide favorable user experience.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Keyword Research",
+        "On- Page & Off Page Optimization",
+        "Technical SEO",
+        "Link Building",
+        "Product Page Optimization",
+        "Category Page Optimization",
+        "Schema Markup Implementation",
+        "Enhancing Site Structure",
+        "Quality Content Creation",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Brand Trust & Credibility",
+        "Track Performance",
+        "Higher Conversion Rate",
+        "Generate Maximum Sales",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Startups & Recognized Online Stores",
+        "Local Businesses with single or multiple product ranges",
+        "Online stores built on platforms such as BigCommerce, Magento, Shopify, WooCommerce",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Analyze areas of improvement with SEO audits",
+        "Sustainable growth through organic traffic",
+        "Improved brand visibility amongst targeted traffic",
+        "Competitive Advantage in search engine results",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Dedicated Team of SEO Experts",
+        "Data Driven SEO Results",
+        "Expertise & Years of Experience",
+        "Proven Track Record of Successful SEO Results",
+      ],
+    },
+    ctaText:
+      "Connect our competent e-commerce SEO team and drive online sales. Book the appointment and clear all your doubts.",
     includes: [
-      "Higher rankings for high-intent product and category queries",
-      "Substantial increase in qualified shopping traffic",
-      "Improved conversion rates through optimized on-page experience",
-      "Enhanced Google Merchant Center and shopping feed visibility",
-    ],
-    methodology: [
-      { step: "01", title: "Catalog & Facet Audit", desc: "Resolve canonicalization issues, filter parameter crawl bloat, and broken SKUs." },
-      { step: "02", title: "Category Silo Optimization", desc: "Structure parent-child category hierarchies with optimized copy and internal links." },
-      { step: "03", title: "Product Schema & Rich Snippets", desc: "Deploy Product, Review, and In-Stock JSON-LD to win search result features." },
-      { step: "04", title: "Shopping Feed Alignment", desc: "Sync Google Merchant Center product attributes with organic landing pages." },
-    ],
-    deliverables: [
-      "Catalog Structure & Facet Strategy",
-      "Product Schema Markup Implementation",
-      "Category Page Content Templates",
-      "E-Commerce Organic Revenue Dashboard",
+      "Brand Trust & Credibility",
+      "Track Performance",
+      "Higher Conversion Rate",
+      "Generate Maximum Sales",
     ],
   },
   {
     slug: "local-seo",
     aliases: ["local-search"],
     name: "Local SEO",
+    h1: "Local SEO",
+    seoTitle: "Local SEO Services: Grow Your Visibility & Revenue",
+    metaDescription:
+      "Boost your business's visibility in local search results with our expert Local SEO services. We help you attract more local customers, increase foot traffic, and grow your brand by optimizing your Google Business Profile, building citations, and managing reviews.",
+    canonicalUrl: "https://www.a2zdm.com/services/local-seo/",
+    altText: "local SEO services boost search visibility.",
+    altTextOptions: [
+      "local SEO services boost search visibility.",
+      "An optimized Google Business Profile as part of a local SEO strategy.",
+      "Checklist of essential local SEO tasks for businesses.",
+    ],
     category: "Search Engine Optimization",
-    short: "Capture local foot traffic and customer phone calls.",
+    short: "Improve your business’s local search visibility on Google.",
+    subheadline: "Improve your business’s local search visibility on Google.",
+    introduction:
+      "Attract local customers through local search results and grow your business. This cost effective marketing strategy is an edge over traditional marketing. Harness the benefits and drive organic traffic to your website.",
     description:
-      "Capture more high-intent local buyers, foot traffic, and phone inquiries with precision Google Business Profile and local citation optimization.",
+      "Attract local customers through local search results and grow your business. This cost effective marketing strategy is an edge over traditional marketing. Harness the benefits and drive organic traffic to your website.",
     Icon: MapPin,
     visualType: "seo",
-    challenge:
-      "Local buyers search with high urgency. Businesses with inconsistent address citations, unoptimized Google Business Profiles, or sparse reviews miss out on local 3-pack visibility.",
+    image: "https://a2zdm.com/local-seo.jpg",
+    whyMatters: {
+      heading: "Why Local SEO Matters?",
+      content:
+        "Reach target audience and generate leads with local SEO. Stand out from local market competition. Attain higher ranking on local based search results on Google’s search engine and Google maps. Additionally, with local citations, online reviews and Google Business profiles, connect with target customers in specific geographic location.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Local SEO Audits",
+        "Google Business Profile Optimization",
+        "Local Citations",
+        "Keyword Research and Optimization",
+        "Link Building",
+        "Online Review Management",
+        "Website Optimization",
+        "Monitoring and Reporting",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Brand trust & authenticity",
+        "Positive & Favorable Customer Reviews",
+        "Optimized Local Keywords",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Franchises and Multi-Location Businesses",
+        "Businesses Looking for Local Visibility",
+        "Businesses having Physical Location",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Enhanced Local Target Audience Reach",
+        "Increased Brand Awareness / Reputation",
+        "Higher Conversion Rate",
+        "Competitive Edge",
+        "Increased Foot Traffic",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Application of Effective & Customized SEO Strategies",
+        "Stay Updated with Algorithm Changes",
+        "Expert & Experienced SEO Team",
+        "Availability of Advanced Tools & Technologies",
+      ],
+    },
+    ctaText:
+      "Connect our core team of SEO and share your business challenges. Book an appointment and let us know about your business in detail.",
     includes: [
-      "Higher Google Local 3-Pack and Maps rankings",
-      "More driving directions, website clicks, and phone calls",
-      "Clean and consistent NAP (Name, Address, Phone) citations",
-      "Enhanced online reputation through proactive review strategy",
-    ],
-    methodology: [
-      { step: "01", title: "Google Business Profile Audit", desc: "Complete every profile attribute, category, service area, and visual asset." },
-      { step: "02", title: "Citation Cleanup & Synchronization", desc: "Audit and correct local directories (Yelp, Apple Maps, YellowPages, etc.)." },
-      { step: "03", title: "Localized Landing Pages", desc: "Build geo-targeted landing pages with localized content, maps, and reviews." },
-      { step: "04", title: "Local Authority & Reviews", desc: "Earn local sponsorships, chamber backlinks, and automated review acquisition." },
-    ],
-    deliverables: [
-      "Optimized Google Business Profile",
-      "Local Citation Audit & Fix Report",
-      "Geo-Targeted Service Page Templates",
-      "Local Rank Grid & Geo-Tracking Reports",
+      "Brand trust & authenticity",
+      "Positive & Favorable Customer Reviews",
+      "Optimized Local Keywords",
+      "Higher Google Local 3-Pack rankings",
     ],
   },
   {
     slug: "home-services-seo",
-    aliases: ["home-service-seo"],
+    aliases: ["home-service-seo", "contractor-seo"],
     name: "Home Service SEO",
+    h1: "Home Service SEO",
+    seoTitle: "Home Service SEO | Boost Local Visibility & Get More Leads Online",
+    metaDescription:
+      "Grow your home service business with A2ZDM’s Home Service SEO. Improve search rankings, attract local customers, and generate qualified leads through tailored SEO strategies for service-based brands.",
+    canonicalUrl: "https://www.a2zdm.com/services/home-services-seo/",
+    altText: "Home service SEO strategies for local businesses",
+    altTextOptions: [
+      "Home service SEO strategies for local businesses",
+      "SEO solutions for home service providers and contractors",
+      "Boost local visibility with effective home service SEO",
+    ],
     category: "Search Engine Optimization",
-    short: "Beat market competition with proven home service strategies.",
+    short: "Beat Market Competition with Proven Home Service Strategies.",
+    subheadline: "Beat Market Competition with Proven Home Service Strategies",
+    introduction:
+      "Are you a home service contractor, looking for more sales? Invest in digital marketing and grow your business by connecting with right consumers. With personalized SEO strategy, we help you attain favorable online presence.",
     description:
-      "Specialized SEO solutions designed for contractors, plumbers, HVAC, and electricians to generate consistent, qualified local service calls.",
+      "Are you a home service contractor, looking for more sales? Invest in digital marketing and grow your business by connecting with right consumers. With personalized SEO strategy, we help you attain favorable online presence.",
     Icon: Wrench,
     visualType: "seo",
-    challenge:
-      "High cost-per-click advertising makes paid ads expensive for home contractors, making dominant local organic rankings critical for high margins.",
+    image: "https://a2zdm.com/home-services-seo.jpg",
+    whyMatters: {
+      heading: "Why Home Service SEO Matters?",
+      content:
+        "With effective Home Service SEO tactics attain higher rankings on search engine results. Focus on industry specific long tail keywords and observe the traffic rolling on your site. Additionally, with new SEO strategies track your business progress and evidence growth in sales.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Targeting Specific Keyword",
+        "Technical SEO Audit",
+        "Local SEO",
+        "Google Business Profile Optimization",
+        "Backlink Building",
+        "On & Off Page Optimization",
+        "Competitor Research",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Organic Traffic",
+        "Brand Trust",
+        "Improved User Experience",
+        "Higher Search Engine Ranking",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Local Home Service Provider",
+        "Specific Home Service Brand",
+        "Online Service Based Brand",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Genuine Leads",
+        "Local Brand Visibility",
+        "Long Term Sustainable Online Growth",
+        "Long Term ROI",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Dedicated Team of SEO",
+        "Strategic SEO Solution",
+        "Personalized Approach to SEO",
+        "Years of Experience",
+      ],
+    },
+    ctaText:
+      "Contact our experience team of SEO and elevate your brand presence online.",
+    faqHeading: "FAQs Related to Home Service SEO",
+    faqs: [
+      {
+        question: "How do you select right keywords for Home Service SEO?",
+        answer:
+          "We select right keywords for Home Service SEO by focusing on local terms and search intent of user.",
+      },
+      {
+        question: "How do you optimize Home Service Website?",
+        answer:
+          "Home Service website optimization aims to create mobile friendly site, informative content and creation of specific pages for targeting keywords.",
+      },
+      {
+        question: "Is creating blogs important for Home Service SEO?",
+        answer:
+          "Blogs are an information tool to connect with your target audience. Seek professional assistance from content creators and have blogs related to your home service.",
+      },
+      {
+        question: "What are the challenges of Home Service SEO?",
+        answer:
+          "Challenges of Home Service SEO are poor local SEO, inconsistent website design, slow web speed, ignored mobile optimization and weak technical foundation.",
+      },
+      {
+        question: "Is video marketing relevant for Home Service SEO?",
+        answer:
+          "Yes, video marketing is relevant for Home Service SEO as it boosts engagement. Videos with testimonials on website are beneficial for favorable SEO results.",
+      },
+      {
+        question: "How can I optimize my Home Service brand locally?",
+        answer:
+          "Optimize your Home Service brand with Goggle Business Profile locally by citing information such as name, address on Google map, create business bio with local keywords such as “near me” and focus on having positive customer reviews.",
+      },
+      {
+        question: "What are the best practices for Home Service SEO?",
+        answer:
+          "The best practices for home service SEO are updating content regularly, leveraging social media and following rules of SEO.",
+      },
+    ],
     includes: [
-      "Genuine residential and commercial project leads",
-      "Prominent local brand visibility in key service territories",
-      "Long-term sustainable online customer acquisition",
-      "High return on marketing investment",
-    ],
-    methodology: [
-      { step: "01", title: "Service Territory Mapping", desc: "Define priority zip codes and high-margin services to target." },
-      { step: "02", title: "Emergency & Commercial Landing Pages", desc: "Design mobile-first pages with click-to-call buttons and trust badges." },
-      { step: "03", title: "Review Velocity Acceleration", desc: "Automate SMS review requests following completed service jobs." },
-      { step: "04", title: "Call Tracking & Attribution", desc: "Track every phone call and form fill back to specific organic keywords." },
-    ],
-    deliverables: [
-      "Local Service Area Architecture",
-      "Click-to-Call Conversion Optimization",
-      "Google Local Services & Map Optimization",
-      "Monthly Lead & Call Volume Analytics",
+      "Organic Traffic",
+      "Brand Trust",
+      "Improved User Experience",
+      "Higher Search Engine Ranking",
     ],
   },
   {
     slug: "cosmetics-seo",
-    aliases: ["beauty-seo"],
-    name: "Cosmetics",
+    aliases: ["beauty-seo", "cosmetic-seo"],
+    name: "Cosmetics SEO",
+    h1: "Cosmetics",
+    seoTitle:
+      "Cosmetics SEO Services | Boost Beauty Brand Visibility & Online Sales",
+    metaDescription:
+      "Enhance your beauty or cosmetic brand’s online visibility with A2ZDM’s Cosmetics SEO services. Optimize product pages, reach potential customers, and grow your sales with proven SEO strategies tailored for the beauty industry.",
+    canonicalUrl: "https://www.a2zdm.com/services/cosmetics-seo/",
+    altText: "Cosmetics SEO strategies for beauty and skincare brands",
+    altTextOptions: [
+      "Cosmetics SEO strategies for beauty and skincare brands",
+      "SEO solutions to grow beauty and cosmetic businesses",
+      "Boost online visibility with proven cosmetics SEO services",
+    ],
     category: "Search Engine Optimization",
-    short: "Optimize your cosmetic website and expand your digital presence.",
+    short: "Optimize your Cosmetic Website & Expand Your Digital Presence.",
+    subheadline:
+      "Optimize your Cosmetic Website & Expand Your Digital Presence",
+    introduction:
+      "By understanding latest fashion and beauty trends, we incorporate proven SEO strategies for brand’s success online. Gain competitive edge with experienced SEO assistance. As we help you reach potential customer, hence drive traffic to your site and attain desirable revenue and sales.",
     description:
-      "Tailored search engine optimization for cosmetics and beauty brands seeking higher visibility, ingredient search dominance, and e-commerce conversions.",
+      "By understanding latest fashion and beauty trends, we incorporate proven SEO strategies for brand’s success online. Gain competitive edge with experienced SEO assistance. As we help you reach potential customer, hence drive traffic to your site and attain desirable revenue and sales.",
     Icon: Sparkles,
     visualType: "seo",
-    challenge:
-      "Beauty consumers research ingredients, skin concerns, and application techniques before purchasing, requiring rich informational content and visual search optimization.",
+    image: "https://a2zdm.com/cosmetics-seo.jpg",
+    whyMatters: {
+      heading: "Why Cosmetics SEO Matters?",
+      content:
+        "Elevate your market presence by investing in cosmetic SEO. Meanwhile, optimize your brand’s search online. With customized SEO strategies, reach business goals. Furthermore, improve your brand’s presence with proven SEO techniques and expand its digital reach.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Searching Related Keywords",
+        "Optimizing Beauty Product Pages",
+        "Link Building",
+        "Collaborating with Beauty Bloggers & Influencers",
+        "Technical SEO",
+        "Local SEO",
+        "Content Marketing",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Higher Search Engine Ranking",
+        "Enhanced User Experience",
+        "Profitability & Sales",
+        "Brand Awareness",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Beauty Brands",
+        "Salons & SPA",
+        "Beauty Professionals",
+        "Cosmetic Surgeons",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Improved Online Visibility",
+        "Higher Conversion Rate",
+        "Organic Traffic",
+        "Brand Trust",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Industry SEO Expertise",
+        "Specialized SEO Strategies",
+        "Proven Results",
+        "Experienced Team",
+      ],
+    },
+    ctaText:
+      "Get in touch with our competent SEO team and allow us to take your cosmetic brand to next level.",
+    faqHeading: "FAQs Related to Cosmetic SEO",
+    faqs: [
+      {
+        question: "How can I create SEO friendly content for my cosmetic brand?",
+        answer:
+          "Publish user centric blogs by inserting keywords naturally, to your cosmetic brand. For instance, “Know your Skin Type & Best Skincare Routine”.",
+      },
+      {
+        question: "How do you optimize product page?",
+        answer:
+          "We optimize product page by using relevant keywords in product description, catchy titles and adding image alt tags.",
+      },
+      {
+        question: "How can I measure Cosmetic SEO success?",
+        answer:
+          "You can measure Cosmetic SEO success by tracking ranking of keywords, monitoring traffic and measuring growth of high quality site links.",
+      },
+      {
+        question:
+          "Is social media marketing effective for Cosmetic companies with respect to SEO?",
+        answer:
+          "Yes, social media marketing of cosmetic companies with intriguing images, hashtags, and captivating titles on social media platforms helps in gaining traffic to cosmetic site.",
+      },
+      {
+        question: "How is Cosmetic SEO different from regular SEO?",
+        answer:
+          "Cosmetic SEO focuses upon recent trends, emotional connect, visual centric content and in building brand trust.",
+      },
+      {
+        question: "Do you provide customized Cosmetic SEO service?",
+        answer:
+          "Yes, we do provide customized Cosmetic SEO service based on clients brand’s goals and expectations.",
+      },
+      {
+        question: "What is the importance of content in Cosmetic SEO?",
+        answer:
+          "High quality informative content helps in attracting visitors to website. Additionally, blog posts, product descriptions and tutorials boost search engine ranking.",
+      },
+    ],
     includes: [
-      "Improved online visibility across beauty and skincare queries",
-      "Higher conversion rates through ingredient transparency",
-      "Sustained organic traffic growth across product lines",
-      "Enhanced brand trust and customer loyalty",
-    ],
-    methodology: [
-      { step: "01", title: "Ingredient & Routine Keyword Research", desc: "Map search queries around active ingredients, routines, and skin types." },
-      { step: "02", title: "Visual & Video SEO", desc: "Optimize swatch photos, tutorial videos, and before/after imagery for Google Images." },
-      { step: "03", title: "Dermatological Authority Building", desc: "Incorporate expert reviews and scientific citations to satisfy E-E-A-T standards." },
-      { step: "04", title: "E-Commerce Funnel Tuning", desc: "Optimize subscription options, bundle recommendations, and checkout speed." },
-    ],
-    deliverables: [
-      "Cosmetics Keyword Matrix & Taxonomy",
-      "Ingredient Glossary & Skincare Guide Framework",
-      "Visual Search Schema Implementation",
-      "Monthly Beauty E-Commerce Revenue Reports",
+      "Higher Search Engine Ranking",
+      "Enhanced User Experience",
+      "Profitability & Sales",
+      "Brand Awareness",
     ],
   },
   {
     slug: "lawyers-seo",
-    aliases: ["legal-seo", "lawyer-seo"],
+    aliases: ["legal-seo", "lawyer-seo", "attorney-seo"],
     name: "Lawyer SEO",
+    h1: "Lawyer SEO",
+    seoTitle:
+      "Lawyer SEO Services | Grow Your Law Firm’s Online Visibility & Clients",
+    metaDescription:
+      "Attract qualified leads and boost your law firm’s credibility with A2ZDM’s Lawyer SEO services. Improve rankings, increase website traffic, and gain more clients through proven legal SEO strategies.",
+    canonicalUrl: "https://www.a2zdm.com/services/lawyers-seo/",
+    altText: "Lawyer SEO strategies for law firms and attorneys",
+    altTextOptions: [
+      "Lawyer SEO strategies for law firms and attorneys",
+      "Legal SEO solutions to attract prospective clients",
+      "Boost law firm visibility with effective SEO services",
+    ],
     category: "Search Engine Optimization",
     short: "Gain prospective clients by investing in Lawyer SEO.",
+    subheadline: "Gain prospective clients by investing in Lawyer SEO",
+    introduction:
+      "Lawyer SEO, an investment which fetches guaranteed results. Have prospective clients with impressive SEO strategy. Appear at top search results and attract clients online. Additionally, with qualified leads expand your business digitally.",
     description:
-      "High-authority search engine optimization for law firms, personal injury attorneys, and legal practices seeking high-value case inquiries.",
+      "Lawyer SEO, an investment which fetches guaranteed results. Have prospective clients with impressive SEO strategy. Appear at top search results and attract clients online. Additionally, with qualified leads expand your business digitally.",
     Icon: Scale,
     visualType: "seo",
-    challenge:
-      "Legal queries are among the most competitive in search and are strictly judged under Google's YMYL (Your Money or Your Life) quality guidelines.",
+    image: "https://a2zdm.com/lawyers-seo.jpg",
+    whyMatters: {
+      heading: "Why Lawyers SEO Matters?",
+      content:
+        "Whether you are a small or big law firm, build your brand’s credibility from lawyer SEO. Meanwhile, stay ahead of market competition by improving online visibility of your brand. Likely, promote your brand and enhance its credibility.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Keyword Research",
+        "Content Creation",
+        "On Page & Off Page Optimization",
+        "Technical SEO",
+        "Backlink Building",
+        "Reputation Management",
+        "Local SEO",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Organic Traffic",
+        "Brand Visibility",
+        "Higher Search Engine Ranking",
+        "Customized SEO Solution",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: ["All Size Law Firms", "Solo Practitioners"],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Generate Organic Clients",
+        "Build Authority",
+        "Competitive Edge",
+        "Higher ROI",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Result Oriented SEO Solution",
+        "Specialized SEO Professional",
+        "Implementation of Updated SEO Strategy",
+        "Customized SEO Solution",
+      ],
+    },
+    ctaText:
+      "Book an appointment today and talk to our experts regarding Lawyers SEO benefits.",
+    faqHeading: "FAQs Related to Lawyer SEO",
+    faqs: [
+      {
+        question: "How do I handle negative review online?",
+        answer:
+          "Negative reviews can impact your law firm impression but you can deal it by addressing the problem sensibly and responsibly.",
+      },
+      {
+        question: "How long does it take Lawyer SEO to derive results?",
+        answer:
+          "SEO is a consistent process it requires 3 to 6 months to acquire good results from lawyer SEO.",
+      },
+      {
+        question: "Do you provide Lawyer SEO service to all types of law firms?",
+        answer:
+          "Yes, we provide lawyer SEO service to all types of law firm ranging from criminal, corporate, family and personal injury.",
+      },
+      {
+        question: "How can I measure Lawyer SEO success?",
+        answer:
+          "There are multiple measures to map Lawyer SEO success, review Google Analytics report of your law firm, assess keyword ranking, website traffic, conversion rate, etc.",
+      },
+      {
+        question: "What is technical SEO for law firm site?",
+        answer:
+          "Technical SEO for law firm site focuses on improving website’s speed, security and performance in order to attain higher search engine ranking.",
+      },
+      {
+        question: "For how long should I invest in lawyer SEO?",
+        answer:
+          "Lawyer SEO is a long term process. One must keep optimizing their website with new SEO rules for being in search engine ranking.",
+      },
+      {
+        question: "Is content part of Lawyer SEO?",
+        answer:
+          "Yes, highly quality content is a significant part of Lawyer SEO as we leverage valuable content by using relevant keywords and in turn it helps in driving traffic.",
+      },
+    ],
     includes: [
-      "Generate qualified organic case inquiries",
-      "Build undisputed local and practice-area legal authority",
-      "Gain a competitive edge over regional law firms",
-      "Deliver higher long-term ROI than high-CPC legal ad auctions",
-    ],
-    methodology: [
-      { step: "01", title: "Practice Area Silo Architecture", desc: "Build dedicated, deep landing pages for every legal specialty." },
-      { step: "02", title: "YMYL & E-E-A-T Compliance", desc: "Highlight attorney credentials, bar admissions, published articles, and case verdicts." },
-      { step: "03", title: "Local Legal Pack Domination", desc: "Optimize Google Business Profiles across multiple office locations." },
-      { step: "04", title: "High-Intent Case Lead Capture", desc: "Optimize contact forms, confidential chat widgets, and 24/7 call intake." },
-    ],
-    deliverables: [
-      "Legal Practice Area Architecture Plan",
-      "Attorney Bio & E-E-A-T Enhancement Guidelines",
-      "Legal Directory & Bar Citation Synchronization",
-      "Case Lead Attribution & Intake Reporting",
+      "Organic Traffic",
+      "Brand Visibility",
+      "Higher Search Engine Ranking",
+      "Customized SEO Solution",
     ],
   },
   {
     slug: "restaurants-seo",
     aliases: ["restaurant-seo"],
-    name: "Restaurants SEO",
+    name: "Restaurant SEO",
+    h1: "Restaurant SEO Services",
+    seoTitle: "SEO Services | Top SEO Services for Restaurants and Hotels",
+    metaDescription:
+      "Fill more tables with specialized Restaurant SEO. We help you attract local customers actively searching on Google, boosting your online visibility to grow your business.",
+    canonicalUrl: "https://www.a2zdm.com/services/restaurants-seo/",
+    altText: "Benefits of restaurant SEO services.",
+    altTextOptions: [
+      "Benefits of restaurant SEO services.",
+      "Business growth and success for a local restaurant.",
+      "Connect with more customers through online marketing.",
+    ],
     category: "Search Engine Optimization",
-    short: "Make your eatery the go-to choice with local and visual SEO.",
+    short: "Improve online visibility of your restaurant through restaurant SEO services.",
+    subheadline:
+      "Improve online visibility of your restaurant through restaurant SEO services. Thereby, achieve restaurant sales target.",
+    introduction:
+      "Stand out in the market with impressive brand visibility online by having your restaurant’s name on the first page of search engine results. Likely, attract organic customers and generate maximum sales.",
     description:
-      "Make your restaurant or cafe the top choice for hungry local patrons with menu schema, Google Maps elevation, and visual optimization.",
+      "Stand out in the market with impressive brand visibility online by having your restaurant’s name on the first page of search engine results. Likely, attract organic customers and generate maximum sales.",
     Icon: UtensilsCrossed,
     visualType: "seo",
-    challenge:
-      "Diners make split-second dining decisions on mobile maps. Restaurants without structured digital menus, fresh photos, and review prominence lose out to delivery aggregators.",
+    image: "https://a2zdm.com/restaurants-seo.jpg",
+    whyMatters: {
+      heading: "Why Restaurant SEO Services Matters?",
+      content:
+        "Beat the market competition as we boost your business locally with effective SEO strategies. By engaging with keywords such as \"best Italian food in Indore\", “restaurants near me”, etc., we optimize your restaurant’s website and improve its Google ranking. Additionally, by understanding your restaurant goals we provide personalize SEO assistance.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Optimizing Restaurant’s Website",
+        "Targeting Focused Keyword",
+        "Google My Business Optimization",
+        "Local Citations",
+        "Mobile Optimization",
+        "Content Marketing",
+        "Link Building",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Improved Online Brand Reputation Management",
+        "Enhanced Search Engine Ranking",
+        "Organic Local Customers",
+        "Higher Conversion Rate",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Large, medium and small size restaurants",
+        "Restaurants with Multiple Locations",
+        "Local Eateries",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Generate Online Traffic",
+        "Increased Foot Traffic",
+        "Attract Sales",
+        "Competitive Advantage",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Trusted & Assured name for guaranteed SEO results",
+        "Generates long term ROI and boosts revenue",
+        "Outsource restaurant SEO and Save your time in core business proposition",
+        "Specialized Core team of SEO",
+        "Experienced & Knowledgeable Experts",
+      ],
+    },
+    ctaText:
+      "Connect us today and find effective Restaurant SEO solution. Book the appointment today and find proven SEO solutions.",
     includes: [
-      "More direct online orders with zero aggregator commissions",
-      "Higher visibility in Google Local 3-Pack and Maps searches",
-      "Increased table reservations and foot traffic",
-      "Better online reputation and review ratings",
-    ],
-    methodology: [
-      { step: "01", title: "Menu Schema Integration", desc: "Implement JSON-LD Menu schema with prices, dietary tags, and photos." },
-      { step: "02", title: "Google Maps & Local Profile Polish", desc: "Keep business hours, holiday schedules, reservation links, and menus up to date." },
-      { step: "03", title: "Foodie & Local Citation Sync", desc: "Ensure consistent listing across Yelp, TripAdvisor, OpenTable, and local food blogs." },
-      { step: "04", title: "Review Generation & Response", desc: "Establish workflows for gathering glowing 5-star reviews on Google." },
-    ],
-    deliverables: [
-      "Structured Digital Menu Schema",
-      "Google Business Profile Dine-In & Takeout Setup",
-      "Reservation & Order Action Integration",
-      "Local Dining Visibility & Footfall Analytics",
+      "Improved Online Brand Reputation Management",
+      "Enhanced Search Engine Ranking",
+      "Organic Local Customers",
+      "Higher Conversion Rate",
     ],
   },
   {
     slug: "retail-seo",
+    aliases: ["retailers-seo", "ecommerce-retail-seo"],
     name: "Retail SEO",
+    h1: "Retail SEO",
+    seoTitle: "Retail SEO Services | Boost Online Store Visibility & Sales",
+    metaDescription:
+      "Enhance your eCommerce or retail store’s visibility with A2ZDM’s Retail SEO services. Optimize product pages, attract high-intent buyers, and drive more traffic that converts into sales.",
+    canonicalUrl: "https://www.a2zdm.com/services/retail-seo/",
+    altText: "Retail SEO strategies for online and local stores",
+    altTextOptions: [
+      "Retail SEO strategies for online and local stores",
+      "SEO solutions to grow retail and ecommerce businesses",
+      "Boost retail store visibility with effective SEO services",
+    ],
     category: "Search Engine Optimization",
-    short: "Level up your online retail store's presence with proven SEO.",
+    short: "Level up your online retail store’s presence with proven SEO services.",
+    subheadline:
+      "Level up your online retail store’s presence with proven SEO services",
+    introduction:
+      "With clearly defined high ranking keywords, attain long term benefits from Retail SEO. Additionally, specify all your offerings pertaining to services and products and get the pages optimized for better user experience and higher page engagement.",
     description:
-      "Drive sustainable sales growth and brand visibility for retail stores competing in dynamic omnichannel markets.",
+      "With clearly defined high ranking keywords, attain long term benefits from Retail SEO. Additionally, specify all your offerings pertaining to services and products and get the pages optimized for better user experience and higher page engagement.",
     Icon: Store,
     visualType: "seo",
-    challenge:
-      "Retailers must navigate fast-changing inventory cycles, seasonal demand swings, and fierce competition from giant retail marketplaces.",
+    image: "https://a2zdm.com/retail-seo.jpg",
+    whyMatters: {
+      heading: "Why Retail SEO Matters?",
+      content:
+        "Reach your customers with updated SEO strategy as Retail SEO keeps you ahead of marketplace competition. Make your retail site attractive, technically competent and aesthetically appealing. Likely, improve your user experience with effective SEO strategy and enhanced online presence",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Keyword Research",
+        "Website Optimization",
+        "Link Building",
+        "Technical SEO",
+        "Local SEO",
+        "Product Page Optimization",
+        "Mobile Optimization",
+        "On Page & Off Page Optimization",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Organic Traffic",
+        "Improved User Experience",
+        "Gain Data Insights",
+        "Increased brand visibility",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: ["E-commerce Brands", "Local Retailers"],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Maximum Sales & Profitability",
+        "Brand Awareness",
+        "Competitive Advantage",
+        "Long Term Growth",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Expert SEO Team",
+        "Customized SEO Solution",
+        "High Grade SEO Assistance",
+        "Proven SEO Solutions",
+      ],
+    },
+    ctaText:
+      "Book an appointment and grow your brand’s visibility by getting in touch with SEO team.",
+    faqHeading: "FAQs Related To Retail SEO",
+    faqs: [
+      {
+        question:
+          "What are the core areas of focus for attaining long term Retail SEO success?",
+        answer:
+          "For attaining long term Retail SEO success optimize product page, reviews, manage customer reviews online, and monitor performance regularly.",
+      },
+      {
+        question: "What are the don’ts of Retail SEO?",
+        answer:
+          "Don’ts of Retail SEO are: keyword stuffing, duplicate content, slow mobile application speed, and ignorance to local SEO.",
+      },
+      {
+        question: "What are the SEO metrics for Retail industry?",
+        answer:
+          "SEO metrics for retail industry are organic traffic, conversion rates, bounce rate, keyword ranking, conversion rate, click through rate and average session duration.",
+      },
+      {
+        question: "What are the strategies applied for Local Retail SEO?",
+        answer:
+          "Strategies for Local Retail SEO are setting up of Google Business Profile, online citations, creation of local content, and use of local keywords.",
+      },
+      {
+        question: "What are the key aspects of Retail SEO?",
+        answer:
+          "Key aspects of Retail SEO are quality content, authentic backlink, fast page speed, and strong technical foundation.",
+      },
+      {
+        question: "Can a brand without physical location benefit from local SEO?",
+        answer:
+          "Yes, brand having no physical location can attain benefit from local SEO by setting up Google Business Profile and location based keywords.",
+      },
+      {
+        question: "Is social media marketing important for Retail SEO?",
+        answer:
+          "Social media marketing doesn’t directly impact Retail SEO but boosts in generating website engagement and visibility.",
+      },
+      {
+        question: "Is it relevant to create separate service and product pages?",
+        answer:
+          "Yes, it is relevant to create separate service and product page for targeting specific keyword on search engine which further helps in search engine rankings.",
+      },
+    ],
     includes: [
-      "Maximum sales volume and profitability across product lines",
-      "Enhanced brand awareness in key regional consumer markets",
-      "Sustainable competitive advantage over rival retailers",
-      "Long-term customer retention and organic growth",
-    ],
-    methodology: [
-      { step: "01", title: "Seasonal Demand Planning", desc: "Anticipate seasonal shopping surges months ahead with early indexation." },
-      { step: "02", title: "Department & Brand Architecture", desc: "Optimize multi-brand taxonomy and clean URL routing." },
-      { step: "03", title: "Omnichannel Store Locator", desc: "Connect online searchers to physical store inventories and nearby branches." },
-      { step: "04", title: "Conversion Rate Optimization", desc: "Streamline product detail pages with customer reviews and clear checkout flows." },
-    ],
-    deliverables: [
-      "Seasonal Retail Campaign Framework",
-      "Brand & Department SEO Strategy",
-      "Store Locator & Inventory Schema",
-      "Omnichannel Revenue Attribution Reports",
+      "Organic Traffic",
+      "Improved User Experience",
+      "Gain Data Insights",
+      "Increased brand visibility",
     ],
   },
   {
     slug: "food-beverages-seo",
     aliases: ["food-beverage-seo"],
     name: "Food & Beverages SEO",
+    h1: "Food & Beverages SEO",
+    seoTitle:
+      "Food & Beverages SEO Services | Boost Restaurant & Food Brand Visibility Online",
+    metaDescription:
+      "Grow your restaurant or food brand with A2ZDM’s Food & Beverages SEO services. Improve your online visibility, attract hungry customers, and rank higher in search results with proven SEO strategies.",
+    canonicalUrl: "https://www.a2zdm.com/services/food-beverages-seo/",
+    altText: "Food & Beverages SEO strategies for restaurants and food brands",
+    altTextOptions: [
+      "Food & Beverages SEO strategies for restaurants and food brands",
+      "Effective SEO for food, beverage, and restaurant businesses",
+      "Boost online reach with food and beverage SEO solutions",
+    ],
     category: "Search Engine Optimization",
-    short: "Transform your food business with effective SEO strategies.",
+    short: "Transform your Food Business with effective SEO strategies.",
+    subheadline:
+      "Transform your Food Business with effective SEO strategies",
+    introduction:
+      "Target on the right keyword and leverage the potential of Food & Beverage SEO. By understanding your target audience, optimize your food and beverage website and attract customers online.",
     description:
-      "Strategic SEO solutions tailored to specialty food brands, beverage makers, and packaged goods navigating D2C and wholesale distribution.",
+      "Target on the right keyword and leverage the potential of Food & Beverage SEO. By understanding your target audience, optimize your food and beverage website and attract customers online.",
     Icon: Coffee,
     visualType: "seo",
-    challenge:
-      "CPG food and beverage brands must simultaneously capture consumer craving queries while demonstrating wholesale capability to grocery buyers.",
+    image: "https://a2zdm.com/food-beverages-seo.jpg",
+    whyMatters: {
+      heading: "Why Food & Beverages SEO Matters?",
+      content:
+        "Have consistent brand visibility and create positive brand reputation. Additionally, stand out from online market competition with smashing SEO strategy. Appear in top search results for customers who are looking for dining options and food delivery apps. Likely, connect with your target audience and generate maximum sales and revenue.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Website Optimization",
+        "Local SEO",
+        "Content Optimization",
+        "Link Building",
+        "Social Media Promotion",
+        "Image Optimization",
+        "Technical SEO",
+        "Setting up of Google Business Profile",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Organic Traffic",
+        "Improved User Experience",
+        "Higher Search Engine Ranking",
+        "Improved Click through Rate",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Restaurants & Cafes",
+        "Beverage Companies",
+        "Catering Companies",
+        "Food Bloggers",
+        "Bars",
+        "Food Manufacturers",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Brand Awareness",
+        "Competitive Edge",
+        "Enhanced Visibility Online",
+        "Brand Trust & Authority",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Years of Experience",
+        "Assured Results",
+        "Team of SEO Experts",
+        "Transparency",
+        "Customized SEO Solution",
+      ],
+    },
+    ctaText:
+      "Level up your business reach online by connecting our SEO experts today!",
+    faqHeading: "FAQs on Food & Beverages SEO",
+    faqs: [
+      {
+        question: "When can I expect to see results from Food & Beverages SEO?",
+        answer:
+          "Typically 3 to 6 months are required to observe results of Food & Beverage SEO.",
+      },
+      {
+        question: "What are the challenges of Food & Beverages SEO?",
+        answer:
+          "Challenges of Food & Beverage SEO are high competition, changing search engine requirements and algorithms.",
+      },
+      {
+        question: "Why is it important to have mobile friendly Food & Beverage website?",
+        answer:
+          "Mobile friendly website helps in connecting with target audience easily. Additionally, mobile friendly site is a boon for higher search engine rankings.",
+      },
+      {
+        question: "How is Food & Beverage SEO different from regular SEO?",
+        answer:
+          "Food & Beverage SEO focuses on industry specific keywords and seasonal food trends. Additionally, F&B SEO focuses on Local SEO and enhancing visual appeal of website and mobile applications.",
+      },
+      {
+        question: "What types of content shall I create for F&B SEO?",
+        answer:
+          "You can create content related to step by step recipe guide, chef profile, update menu, photos and video oriented to dining experience for F&B SEO.",
+      },
+      {
+        question: "How can I know about my target audience for F&B business online?",
+        answer:
+          "As per your products and services know whom are you trying to cater. Who are your target customers? Thereafter, drive organic traffic through industry specific target keywords.",
+      },
+      {
+        question: "Are customer reviews important for F&B brand online?",
+        answer:
+          "Yes, positive customer reviews are the most important aspect of building F&B brand’s credibility and authority.",
+      },
+      {
+        question: "How can I attain brand loyalty?",
+        answer:
+          "You can attain brand loyalty with consistent online activity. Post blogs, and engage with high quality video content on all social medial platforms and website regularly.",
+      },
+    ],
     includes: [
-      "Broadened brand awareness across consumer and wholesale segments",
-      "Competitive edge over legacy packaged food brands",
-      "Enhanced visibility across recipe, nutritional, and lifestyle searches",
-      "Deep brand trust and authenticity through structured certifications",
-    ],
-    methodology: [
-      { step: "01", title: "Consumer & Wholesale Segmentation", desc: "Structure content to serve both direct buyers and distribution inquiries." },
-      { step: "02", title: "Recipe & Nutrition Schema", desc: "Incorporate rich recipe markup with prep times, calorie counts, and dietary tags." },
-      { step: "03", title: "Retail Locator Integration", desc: "Help customers find where your products are stocked on physical store shelves." },
-      { step: "04", title: "Lifestyle PR & Influencer Coverage", desc: "Earn editorial features on food blogs, culinary podcasts, and lifestyle media." },
-    ],
-    deliverables: [
-      "B2C & B2B Search Strategy Blueprint",
-      "Recipe & Nutritional Schema Markup",
-      "Where-to-Buy Store Locator Setup",
-      "Brand Authority & Organic Traffic Metrics",
+      "Organic Traffic",
+      "Improved User Experience",
+      "Higher Search Engine Ranking",
+      "Improved Click through Rate",
     ],
   },
   {
     slug: "jewelry-seo",
+    aliases: ["fine-jewelry-seo", "jewellery-seo"],
     name: "Jewelry SEO",
+    h1: "Jewelry SEO",
+    seoTitle: "Jewelry SEO Services | Boost Online Jewelry Store Visibility & Sales",
+    metaDescription:
+      "Grow your jewelry brand’s online presence with A2ZDM’s Jewelry SEO services. Optimize product pages, attract genuine leads, and increase sales with tailored SEO strategies for jewelry stores and brands.",
+    canonicalUrl: "https://www.a2zdm.com/services/jewelry-seo/",
+    altText: "Jewelry SEO strategies for online and retail jewelry brands",
+    altTextOptions: [
+      "Jewelry SEO strategies for online and retail jewelry brands",
+      "SEO solutions to boost visibility of jewelry stores online",
+      "Increase jewelry brand sales with expert SEO services",
+    ],
     category: "Search Engine Optimization",
-    short: "Optimize your online jewelry store with end-to-end SEO.",
+    short: "Optimize your online jewelry store with end-to-end SEO solution.",
+    subheadline: "Optimize your online Jewelry store with end to end SEO solution",
+    introduction:
+      "Attain higher search engine rankings. Jewelry SEO is a cost effective methodology to attract online audience. Leverage the benefit of keywords and rank higher on search engine.",
     description:
-      "End-to-end search engine optimization for fine jewelry brands, custom jewelers, and gem retailers seeking high-ticket buyers.",
+      "Attain higher search engine rankings. Jewelry SEO is a cost effective methodology to attract online audience. Leverage the benefit of keywords and rank higher on search engine.",
     Icon: Gem,
     visualType: "seo",
-    challenge:
-      "High-ticket jewelry purchases require exceptional trust, certification clarity, high-resolution imagery, and bespoke consultation booking flows.",
-    includes: [
-      "Attract genuine high-net-worth jewelry buyers",
-      "Enhanced online visibility for high-ticket gem and ring searches",
-      "Higher conversion rates through certified trust signals",
-      "Increased organic revenue from bespoke and bridal orders",
-    ],
-    methodology: [
-      { step: "01", title: "Luxury Keyword Mapping", desc: "Target high-intent queries around diamond cuts, custom designs, and bridal jewelry." },
-      { step: "02", title: "Certification & Trust Signal Schema", desc: "Integrate GIA/IGI certification details and warranty information." },
-      { step: "03", title: "Visual & 360-View Search Optimization", desc: "Optimize high-definition imagery and video for Google Image search." },
-      { step: "04", title: "VIP Consultation Funnel", desc: "Design seamless private appointment booking flows for custom designs." },
-    ],
-    deliverables: [
-      "Luxury Jewelry SEO Taxonomy",
-      "Gemstone & Certification Schema Markup",
-      "Visual Image Search Optimization Plan",
-      "High-Ticket Conversion & Lead Reports",
+    image: "https://a2zdm.com/jewelry-seo.jpg",
+    whyMatters: {
+      heading: "Why Jewelry SEO Matters?",
+      content:
+        "Invest in Jewelry SEO and have higher conversion rate. Gain competitive edge with enhanced local searches online. Jewelry SEO helps a brand reach its potential customer and expand digital presence. It’s an effective method to boost sales online and attain long term benefits.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Appropriate Keyword Research",
+        "On page & off page Optimization",
+        "Technical SEO",
+        "Link Building",
+        "SEO Audit",
+        "Competitor’s Analysis",
+        "Product Optimization",
+        "Local SEO",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Brand Trust & Authority",
+        "Improved User Experience",
+        "Brand Awareness",
+        "Higher Search Engine Ranking",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Online Jewelry Brand",
+        "Jewelry Chains",
+        "Jewelry Event Organizers",
+        "Brick and Mortar Jewelry Stores",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Attract Genuine Leads",
+        "Enhanced Online Visibility",
+        "Higher Conversion Rate",
+        "Increased Revenue",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Tailored SEO Solution",
+        "Expertise & Specialization in Jewelry SEO",
+        "Proven Results",
+        "Updated SEO Strategy",
+      ],
+    },
+    ctaText:
+      "Connect our Jewelry SEO team today and promote your brand virtually.",
+    faqHeading: "FAQs of Jewelry SEO",
+    faqs: [
+      {
+        question: "How can I measure success of Jewelry SEO?",
+        answer:
+          "You can measure success of Jewelry SEO through Google Analytics which gives detailed data driven insights about SEO strategy. Review increase in traffic, conversion rate and click through rate.",
+      },
+      {
+        question: "How can I enhance local visibility of my jewelry brand?",
+        answer:
+          "Update your Google Business Profile with all the necessary information such as your location, business bio, offerings, etc. and share the link on all online platforms.",
+      },
+      {
+        question: "What is backlink building?",
+        answer:
+          "Backlink building is earning links from recognized websites on Google to enhance brand’s own credibility and authority.",
+      },
+      {
+        question: "How do you select right keywords for jewelry website?",
+        answer:
+          "We select the best keywords by keeping into consideration product-specific keywords and high-value keywords.",
+      },
+      {
+        question: "Why is it important to improve Jewelry site speed?",
+        answer:
+          "Site speed is important for easing user experience and for attaining quick ranking on search engine.",
+      },
+      {
+        question: "How do you optimize product page?",
+        answer:
+          "We optimize product pages by including product descriptions, high quality images and relevant alt text.",
+      },
+      {
+        question: "What types of content should I create for Jewelry SEO?",
+        answer:
+          "Create blog posts related to your products, jewelry gifting, product offerings and trendy topics related to jewelry. Besides, make your content engaging and SEO friendly by including industry-specific keywords.",
+      },
     ],
   },
   {
     slug: "childcare-seo",
-    aliases: ["child-care-seo"],
+    aliases: ["child-care-seo", "daycare-seo", "preschool-seo"],
     name: "Child Care SEO",
+    h1: "Child Care SEO",
+    seoTitle: "Child Care SEO Services | Boost Daycare & Preschool Online Visibility",
+    metaDescription:
+      "Attract more enrollments with A2ZDM’s Child Care SEO services. Optimize your daycare, preschool, or childcare website, reach local parents, and drive qualified leads with expert SEO strategies.",
+    canonicalUrl: "https://www.a2zdm.com/services/childcare-seo/",
+    altText: "Child Care SEO strategies for daycares and preschools",
+    altTextOptions: [
+      "Child Care SEO strategies for daycares and preschools",
+      "SEO solutions to grow childcare centers’ online presence",
+      "Boost enrollments with effective childcare SEO services",
+    ],
     category: "Search Engine Optimization",
-    short: "Seek expert SEO solutions for childcare and early learning centers.",
+    short: "If you are a Childcare Service Provider, Seek Expert SEO Solutions.",
+    subheadline: "If you are a Childcare Service Provider, Seek Expert SEO Solutions",
+    introduction:
+      "Attract qualified leads to your childcare website. Reach your target audience by regularly updating information. Address concerns and questions of parents and improve user experience.",
     description:
-      "Specialized search engine optimization for daycare centers, preschools, and early learning providers to drive enrollment inquiries.",
+      "Attract qualified leads to your childcare website. Reach your target audience by regularly updating information. Address concerns and questions of parents and improve user experience.",
     Icon: Baby,
     visualType: "seo",
-    challenge:
-      "Parents research childcare with extreme care regarding safety, staff credentials, curriculum, and proximity. Establishing genuine local trust is paramount.",
-    includes: [
-      "Sustained organic traffic from local parents seeking childcare",
-      "Enhanced online visibility in neighborhood search results",
-      "Brand trust and authenticity through parent review management",
-      "Competitive edge over regional daycare chains",
-    ],
-    methodology: [
-      { step: "01", title: "Proximity & Neighborhood Targeting", desc: "Target radius searches around residential areas, corporate parks, and schools." },
-      { step: "02", title: "Curriculum & Safety Showcase", desc: "Structure program descriptions, safety accreditations, and educator bios." },
-      { step: "03", title: "Tour Booking Optimization", desc: "Make scheduling in-person or virtual campus tours effortless on mobile." },
-      { step: "04", title: "Parent Testimonial Architecture", desc: "Highlight authentic parent testimonials with verified review schema." },
-    ],
-    deliverables: [
-      "Neighborhood Childcare SEO Plan",
-      "Campus Tour Lead Funnel Setup",
-      "Accreditation & Staff Schema Markup",
-      "Monthly Enrollment Lead Tracking",
+    image: "https://a2zdm.com/childcare-seo.jpg",
+    whyMatters: {
+      heading: "Why Child Care SEO Matters?",
+      content:
+        "Optimize childcare website and boost your ranking on search engine results. Stand out from market competition through impactful SEO. With a locally optimized site and technically advanced SEO, a childcare can attract maximum enrolls and admissions. Invest in childcare SEO and have organic traffic.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It?",
+      items: [
+        "Understanding of Target Audience",
+        "Keyword Researching",
+        "On page & off page Optimization",
+        "Local SEO",
+        "Link Building",
+        "Content Marketing",
+        "Creating Google Business Profile",
+        "Technical SEO",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get?",
+      items: [
+        "Improved Online Reputation",
+        "Long Term SEO Benefits",
+        "Enhanced User Experience",
+        "Enriched Local Reach Online",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For?",
+      items: [
+        "Daycare Centers",
+        "In-Home Childcare Providers",
+        "Preschools",
+        "Baby Product Businesses",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Organic Traffic",
+        "Enhanced Online Visibility",
+        "Brand Trust & Authenticity",
+        "Competitive Edge",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Customized SEO Solution",
+        "Comprehensive SEO Reporting",
+        "Years of Experience",
+        "Proven SEO Results",
+      ],
+    },
+    ctaText: "Get in touch with our Childcare SEO team and have free consultation.",
+    faqHeading: "FAQs on Childcare SEO",
+    faqs: [
+      {
+        question: "Should I include blogs to my childcare website?",
+        answer:
+          "Yes, you must include blogs to your childcare website to enrich your website’s ranking on Google. An informative site with valuable content is a prerequisite for better SEO results.",
+      },
+      {
+        question: "Is childcare SEO a one-time process?",
+        answer:
+          "No, childcare SEO isn’t a one-time process. It requires consistent efforts by SEO team to generate SEO progress and improve online visibility.",
+      },
+      {
+        question: "Where should I place important keyword on my childcare website?",
+        answer:
+          "You can place important keywords on childcare website’s page titles, URLs, headlines, etc. to gain maximum traffic.",
+      },
+      {
+        question: "Why is it important to manage online reviews?",
+        answer:
+          "Online reviews play a crucial role in positive brand image which further helps in gaining leads. Furthermore, positive parent feedback optimizes your brand’s presence locally.",
+      },
+      {
+        question: "How can I measure Childcare SEO?",
+        answer:
+          "One can measure Childcare SEO through organic traffic, Google Analytics, conversion rate, and keyword ranking.",
+      },
+      {
+        question: "How important is visual content for childcare SEO?",
+        answer:
+          "Visual content such as display of childcare facilities, activities, and testimonials acts as a catalyst for Childcare SEO. As it enhances brand’s trust and assures parents of their child’s security and comfort.",
+      },
+      {
+        question: "How shall I create Google Business Profile for my childcare site?",
+        answer:
+          "Complete Google Business Profile accurately by stating information such as name, address, contact details, business hours and services related to Childcare site. Don’t forget to include pictures of your childcare while writing a detailed description about your childcare.",
+      },
     ],
   },
 
@@ -607,96 +1639,327 @@ export const ALL_SERVICES = [
   },
   {
     slug: "ga4-analytics",
-    aliases: ["ga4", "google-analytics-4"],
-    name: "GA4 Analytics",
+    aliases: ["ga4", "google-analytics-4", "google-analytics"],
+    name: "Google Analytics",
+    h1: "Google Analytics",
+    seoTitle: "Google Analytics Consultants & GA4 Expert Services",
+    metaDescription:
+      "Get expert support for Google Analytics 4. Our consultants help with setup, migration, and reporting so you can track performance accurately and grow with confidence.",
+    canonicalUrl: "https://www.a2zdm.com/services/ga4-analytics/",
+    altText: "Google analytics consultants",
+    altTextOptions: [
+      "Google analytics consultants",
+      "Google analytics 4 setup",
+      "Ga4 migration support",
+    ],
     category: "Digital Analytics",
-    short: "Master the new analytics standard with GA4 implementation.",
+    short: "Analyze user behavior and grow your business with Google Analytics 4 Setup & Implementation.",
+    subheadline:
+      "Analyze user behavior and grow your business with Google Analytics 4 Setup & Implementation.",
+    introduction:
+      "Interpret data and formulate effective digital marketing strategies for business growth and sustainability. Furthermore, review insights related to website traffic, rate of conversion, user engagement and in turn make data driven business decision.",
     description:
-      "Comprehensive Google Analytics 4 implementation, migration, custom event tracking, and advanced attribution modeling.",
+      "Interpret data and formulate effective digital marketing strategies for business growth and sustainability. Furthermore, review insights related to website traffic, rate of conversion, user engagement and in turn make data driven business decision.",
     Icon: LineChart,
     visualType: "analytics",
     image: "https://a2zdm.com/ga4.jpg",
-    challenge:
-      "The shift from Universal Analytics session tracking to GA4 event-based data has left many organizations with broken reporting, missing conversion goals, and unexplained data discrepancies.",
+    whyMatters: {
+      heading: "Why GA4 Setup Matters?",
+      content:
+        "Know your business with intriguing data insights. As Google Analytics lets you understand target audience demographics, monitor performance, track conversations, etc. Henceforth, optimize online visibility with Google Analytics and prevent fake traffic.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Google Analytics Set Up",
+        "Maintaining Tags & Accounts",
+        "Issue of Audit Service Reports",
+        "Offering Strategic Advice",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Track Metrics",
+        "Accessibility to Real time Reporting",
+        "Google Analytics Set up Assistance",
+        "Customized Dashboard",
+        "Privacy Safe Measurement",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Small to Medium to Large Enterprises",
+        "Digital Analyst",
+        "Developers",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Understand Your Target Audience",
+        "Stay Ahead of Market Competition",
+        "Increased Return on Investment",
+        "Enhanced user experience for website and application",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Experienced Google Analytics Partner",
+        "Comprehensive Analytics Reporting",
+        "Expert & Specialized Team of Analytics",
+        "Accuracy in Data Interpretation",
+      ],
+    },
+    ctaText:
+      "Seek assistance regarding Google Analytics from our professional experts. Schedule consultation call and attain genuine information.",
     includes: [
-      "Future-proof analytics setup built on event-driven architecture",
-      "Deeper customer journey insights across web and mobile apps",
-      "Improved attribution modeling connecting clicks to closed deals",
-      "Better cross-platform visibility and BigQuery export readiness",
-    ],
-    methodology: [
-      { step: "01", title: "GA4 Configuration Audit", desc: "Audit data streams, retention settings, and referral exclusions." },
-      { step: "02", title: "Custom Event Architecture", desc: "Build custom event definitions, user properties, and calculated metrics." },
-      { step: "03", title: "Attribution & Conversion Setup", desc: "Configure key events, conversion windows, and attribution models." },
-      { step: "04", title: "Exploration Reports & BigQuery Link", desc: "Build custom exploration funnels and connect BigQuery for raw data access." },
-    ],
-    deliverables: [
-      "Complete GA4 Configuration & Event Spec",
-      "Custom Funnel & Path Exploration Reports",
-      "BigQuery Export & Data Streaming Setup",
-      "Team Training & Custom Reporting Walkthrough",
+      "Track Metrics",
+      "Accessibility to Real time Reporting",
+      "Google Analytics Set up Assistance",
+      "Customized Dashboard",
+      "Privacy Safe Measurement",
     ],
   },
   {
     slug: "google-tag-manager",
     aliases: ["gtm"],
     name: "Google Tag Manager",
+    h1: "Google Tag Manager",
+    seoTitle: "Hire the Best Google Tag Manager specialists - A2ZDM",
+    metaDescription:
+      "Hire expert Google Tag Manager specialists at A2ZDM. We provide GTM setup, implementation, and advanced tracking solutions to improve analytics and campaign performance.",
+    canonicalUrl: "https://www.a2zdm.com/services/google-tag-manager/",
+    altText: "Google tag manager specialists",
+    altTextOptions: [
+      "Google tag manager specialists",
+      "Google tag manager setup",
+      "GTM implementation services",
+    ],
     category: "Digital Analytics",
-    short: "Improve your business analytics with Google Tag Manager.",
+    short: "Improve your Business Analytics with Google Tag Manager.",
+    subheadline: "Improve your Business Analytics with Google Tag Manager",
+    introduction:
+      "Gain data driven insights. With seamless digital analytics, empower your business. Whether you are a small or big enterprise, coming from any industry, Google Tag Management assists you in improving user interaction.",
     description:
-      "Enterprise Tag Manager architecture, client-side container hygiene, and server-side GTM deployment for faster site speeds and reliable data capture.",
+      "Gain data driven insights. With seamless digital analytics, empower your business. Whether you are a small or big enterprise, coming from any industry, Google Tag Management assists you in improving user interaction.",
     Icon: Tags,
     visualType: "analytics",
-    challenge:
-      "Cluttered, disorganized tag containers slow down page speed, introduce security vulnerabilities, and frequently cause duplicate or missing conversion signals.",
+    image: "https://a2zdm.com/google-tag-manager.jpg",
+    whyMatters: {
+      heading: "Why Google Tag Manager Matters?",
+      content:
+        "Google Tag Manager (GTM) provides benefit of code free management and collaboration. The professional team of Google Tag Manager assists you with tag management requirements. With smooth integration and concise data collection, monitor your business real time. Furthermore, elevate your business performance with data driven decision making.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Installation & Configuration",
+        "Managing Tags",
+        "GTM Migration",
+        "Advanced Tracking",
+        "Third Party Codes Deployment",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Real Time Insights",
+        "Support & Maintenance",
+        "Data Accuracy",
+        "Data Privacy & Control",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Digital Marketers and Analysts",
+        "Website Owners",
+        "Developers",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Enhanced Website Speed",
+        "Improved User Experience",
+        "AI Powered Tagging",
+        "Professional Tag Management",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Team of Automation Experts",
+        "Higher ROI",
+        "Customized Solution",
+        "Years of Experience",
+        "Proven Track Record of Success",
+      ],
+    },
+    ctaText:
+      "Book an appointment today and attain desired business success.",
+    faqHeading: "FAQ Related to Google Tag Manager",
+    faqs: [
+      {
+        question:
+          "What are the different types of tags in Google Tag Manager?",
+        answer:
+          "The different types of tags in Google Tag Manager include analytics tags, marketing tags, and custom HTML tags.",
+      },
+      {
+        question: "How much time does it take to set up GTM?",
+        answer:
+          "GTM setting up depends upon complexity of website and inclusion of number of tags, so you can expect the time of few days for complete installation.",
+      },
+      {
+        question: "Do I need skills of coding for using GTM?",
+        answer:
+          "No, skills of coding is required for using GTM as it is a user friendly interface which allows one to edit, and remove tags easily.",
+      },
+      {
+        question: "What types of insights can I get from Google Tag Manager?",
+        answer:
+          "Google Tag Manager provides insights related to marketing campaign performance, user behavior, traffic, conversion rate, etc.",
+      },
+      {
+        question:
+          "What is the core difference between Google Analytics and GTM?",
+        answer:
+          "Both Google Analytics and GTM are free tools offered by Google. Wherein Google Analytics analyzes website data and GTM tracks performance through tags and extracts data of website.",
+      },
+      {
+        question: "Is Google Tag Manager free?",
+        answer:
+          "Yes, Google Tag Manager is free, so small and medium enterprises can avail the benefit. But large enterprises must go for paid Google Tag Manager 360 for deeper business insights.",
+      },
+    ],
     includes: [
-      "Enhanced website speed through streamlined container execution",
-      "Improved user experience with asynchronous tag firing",
-      "Modern server-side tagging for privacy and ad blocker resilience",
-      "Professional tag governance and version management",
-    ],
-    methodology: [
-      { step: "01", title: "Container Audit & Pruning", desc: "Remove dead tags, duplicate triggers, and legacy code." },
-      { step: "02", title: "DataLayer Standardization", desc: "Implement a robust data layer for consistent variable passing." },
-      { step: "03", title: "Server-Side GTM Architecture", desc: "Deploy Cloud Run / GCP server containers to bypass browser blockers." },
-      { step: "04", title: "Automated QA & Governance", desc: "Establish preview environments, approval workflows, and versioning protocols." },
-    ],
-    deliverables: [
-      "Modular GTM Container Architecture",
-      "Server-Side Tagging Infrastructure",
-      "DataLayer Developer Documentation",
-      "Container Governance & Release Playbook",
+      "Real Time Insights",
+      "Support & Maintenance",
+      "Data Accuracy",
+      "Data Privacy & Control",
     ],
   },
   {
     slug: "piwikpro-analytics",
     aliases: ["piwik-pro"],
     name: "Piwik PRO",
+    h1: "Piwik PRO",
+    seoTitle: "Piwik PRO Analytics Services & Consulting – A2ZDM",
+    metaDescription:
+      "Leverage Piwik PRO analytics with A2ZDM. Our experts provide setup, customization, and reporting to help you gain full control over your data with privacy-first analytics.",
+    canonicalUrl: "https://www.a2zdm.com/services/piwikpro-analytics/",
+    altText: "Piwik pro analytics setup",
+    altTextOptions: [
+      "Piwik pro analytics setup",
+      "Piwik pro implementation",
+      "Privacy first analytics",
+    ],
     category: "Digital Analytics",
-    short: "Analyze your website with privacy-first Piwik PRO.",
+    short: "Analyze website and application through advancement of Piwik PRO.",
+    subheadline:
+      "Analyze website and application through advancement of Piwik PRO.",
+    introduction:
+      "Manage your data and understand customer behavior. This digital analytics platform helps businesses track customer journey and draw business insights. Leverage the potential of your data and make informed business decision.",
     description:
-      "Deploy privacy-first web and product analytics with Piwik PRO, ensuring full GDPR and healthcare compliance without sacrificing tracking depth.",
+      "Manage your data and understand customer behavior. This digital analytics platform helps businesses track customer journey and draw business insights. Leverage the potential of your data and make informed business decision.",
     Icon: Gauge,
     visualType: "analytics",
-    challenge:
-      "Strict data sovereignty laws (GDPR, CCPA, HIPAA) prevent standard US-hosted cloud tracking for healthcare, financial, and European organizations.",
+    image: "https://a2zdm.com/piwikpro-analytics.jpg",
+    whyMatters: {
+      heading: "Why Piwik PRO Matters?",
+      content:
+        "Data sensitive industries can make best utilization of Piwik PRO as the platform assures data privacy and compliances under regulations of HIPAA, CCPA, GDPR. Likely, attain complete control over your business data and promote brand strategically.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Installation & Set Up",
+        "Account Management",
+        "Tag management",
+        "Consent management",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Data Privacy Platform",
+        "Flexible Hosting",
+        "Customized Support",
+        "Data Security",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Marketers",
+        "Product Teams",
+        "Analysts",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Data Driven Business Decision",
+        "Overview of Customer’s Journey",
+        "Provide Personalized Experience to Users",
+        "Gain Real Time Data Insights",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Continuous Support",
+        "Customized Analytics Solution",
+        "Seamless Integration",
+        "Professional Assistance",
+      ],
+    },
+    ctaText: "Get in touch with our team and receive valuable data insights",
+    faqHeading: "FAQs of Piwik PRO",
+    faqs: [
+      {
+        question: "What are the core reports of Piwik PRO?",
+        answer:
+          "The core reports of Piwik PRO are audience report, behavior report, acquisition report and conversion report.",
+      },
+      {
+        question: "Can I change my Piwik PRO plan?",
+        answer:
+          "Yes, you can change your Piwik PRO plan as per your preference, but make sure that your current plan ends before you switch to new plan.",
+      },
+      {
+        question: "Where can I find detailed information about Piwik PRO?",
+        answer:
+          "You can find detailed information about Piwik PRO on Piwik PRO help center and Piwik PRO community.",
+      },
+      {
+        question: "What are the benefits of Piwik Pro?",
+        answer:
+          "Benefits of Piwik Pro are funnel analysis, campaign tracking, user flow, customized reporting and integration with BI tools.",
+      },
+      {
+        question: "What is the cost of Piwik Pro?",
+        answer: "You can sign up Piwik Pro for free of charge.",
+      },
+      {
+        question: "Who is the owner of Piwik Pro?",
+        answer: "Owner of Piwik Pro is the Danish Cookie Information Group.",
+      },
+      {
+        question: "What type of data is collected by Piwik Pro?",
+        answer:
+          "Piwik Pro collects browsing session data related to how long a user stayed, which pages they visited, how visitor reached a website, what device they used. It gives idea about non personal information.",
+      },
+    ],
     includes: [
-      "Data-driven business decisions backed by 100% compliant data",
-      "Comprehensive overview of the complete customer journey",
-      "Personalized experiences while honoring strict user consent",
-      "Real-time data insights hosted in compliant EU/private cloud servers",
-    ],
-    methodology: [
-      { step: "01", title: "Compliance Scoping", desc: "Determine data privacy requirements and cloud residency parameters." },
-      { step: "02", title: "Piwik PRO Suite Deployment", desc: "Install Piwik PRO Analytics, Tag Manager, and Consent Manager." },
-      { step: "03", title: "Customer Data Platform (CDP) Setup", desc: "Build unified user profiles with integrated behavioral history." },
-      { step: "04", title: "Custom Dashboard Creation", desc: "Design executive dashboards tailored to compliance and marketing KPIs." },
-    ],
-    deliverables: [
-      "Compliant Piwik PRO Workspace Setup",
-      "Integrated Consent Management Workflow",
-      "CDP Single-Customer View Configuration",
-      "Compliance Verification Certificate",
+      "Data Privacy Platform",
+      "Flexible Hosting",
+      "Customized Support",
+      "Data Security",
     ],
   },
   {
@@ -893,62 +2156,204 @@ export const ALL_SERVICES = [
     slug: "bigquery",
     aliases: ["big-query", "google-bigquery"],
     name: "Big Query",
+    h1: "Big Query",
+    seoTitle: "Google BigQuery Consulting & Services – A2ZDM",
+    metaDescription:
+      "BigQuery consulting and implementation services for advanced analytics and data warehousing. A2ZDM ensures fast queries, optimized performance, and actionable insights.",
+    canonicalUrl: "https://www.a2zdm.com/services/bigquery/",
+    altText: "Digital performance marketing services",
+    altTextOptions: [
+      "Digital performance marketing services",
+      "PPC and performance ads",
+      "Best performance marketing agency",
+    ],
     category: "Business Intelligence",
-    short: "Analyze large volumes of data in real time with BigQuery.",
+    short: "Analyze large volumes of data real time with Big Query.",
+    subheadline:
+      "Analyze large volumes of data real time with Big Query",
+    introduction:
+      "Big Query assists in large scale analytics. Manage and analyze your business data through the competency of Big Query. Moreover, with flexible pricing model, avail benefits of Big Query.",
     description:
-      "Deploy Google Cloud BigQuery for serverless, cost-effective data warehousing and real-time SQL analytics on massive marketing and behavioral datasets.",
+      "Big Query assists in large scale analytics. Manage and analyze your business data through the competency of Big Query. Moreover, with flexible pricing model, avail benefits of Big Query.",
     Icon: Database,
     visualType: "bi",
-    challenge:
-      "Standard databases crash when running complex analytical queries across millions of GA4 events, ad impressions, and customer interactions.",
+    image: "https://a2zdm.com/bigquery.jpg",
+    whyMatters: {
+      heading: "Why Big Query Matters?",
+      content:
+        "Big Query comes with the benefit of no infrastructure management, as Big Query is Google’s serverless, fully managed cloud which is integrated with Google’s other cloud services as well. Big Query is a PaaS which means it provides platform as a service. Big Query supports SQL based query.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Data Ingestion",
+        "Data Storage",
+        "Data Analysis",
+        "Query Processing",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Advanced Analytics",
+        "Massive Data Processing",
+        "Easy Accessibility",
+        "Geospatial Analytics",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Businesses and Enterprises",
+        "Developer",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Real time Analytics",
+        "Data Transfer",
+        "Data Security",
+        "Improved Business Performance",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "24/7 Support & Assistance",
+        "Reliable Data Management",
+        "Expert Data Handling",
+        "Customized Solution",
+      ],
+    },
+    ctaText:
+      "Connect our team for consultation and let us know how we can help you?",
+    faqHeading: "FAQ on Big Query",
+    faqs: [
+      {
+        question: "What are the typical services of Big Query?",
+        answer:
+          "The typical services of Big Query are data storage and data analysis.",
+      },
+      {
+        question: "What type of data format is used in Big Query?",
+        answer: "Big Query stores data in table format.",
+      },
+      {
+        question: "Can Big Query and Excel be connected?",
+        answer:
+          "Yes, Big Query and excel can be connected through BigQuery Excel connector, wherein excel can import data from Big Query.",
+      },
+      {
+        question: "What language does Big Query use?",
+        answer: "Big Query uses standard SQL.",
+      },
+      {
+        question: "How can data be loaded in Big Query?",
+        answer:
+          "Data can be loaded in Big Query through Google Cloud Storage, local files and streaming data.",
+      },
+      {
+        question: "How Big Query Encrypts data?",
+        answer:
+          "Big Query encrypts data through Customer-Managed Encryption Keys (CMEK).",
+      },
+      {
+        question: "Do I get the facility of Query Cache in Big Query?",
+        answer:
+          "Yes, you do get the facility of Query Cache in Big Query at no charge. You can leverage the facility of cache for 24 hours if data isn’t changed.",
+      },
+    ],
     includes: [
-      "Real-time analytics across petabytes of business data in seconds",
-      "Seamless data transfer and streaming from Google Marketing Platform",
-      "Enterprise-grade data security, encryption, and access control",
-      "Improved business performance through low-cost serverless querying",
-    ],
-    methodology: [
-      { step: "01", title: "Dataset & Schema Architecture", desc: "Design optimized tables with date partitioning and clustering keys." },
-      { step: "02", title: "Automated Data Ingestion", desc: "Configure real-time streaming from GA4, Google Ads, and CRM APIs." },
-      { step: "03", title: "SQL Transformation & Modeling", desc: "Build scheduled SQL views to prepare clean reporting tables." },
-      { step: "04", title: "Cost & Performance Governance", desc: "Implement query cost caps, slot management, and caching strategies." },
-    ],
-    deliverables: [
-      "Optimized BigQuery Warehouse Architecture",
-      "Automated GA4 & Marketing Data Connectors",
-      "Scheduled Data Modeling Views & Tables",
-      "Query Cost Optimization & Governance Guide",
+      "Advanced Analytics",
+      "Massive Data Processing",
+      "Easy Accessibility",
+      "Geospatial Analytics",
     ],
   },
   {
     slug: "looker-studio",
     aliases: ["looker", "google-data-studio"],
     name: "Looker Studio",
+    h1: "Looker Studio",
+    seoTitle: "Looker Studio Services & Dashboard Solutions – A2ZDM",
+    metaDescription:
+      "Looker Studio experts for dashboard setup, reporting, and data visualization. A2ZDM helps you connect data sources and build custom reports for better decisions.",
+    canonicalUrl: "https://www.a2zdm.com/services/looker-studio/",
+    altText: "Looker studio services",
+    altTextOptions: [
+      "Looker studio services",
+      "Looker studio data insights",
+      "Interactive dashboards looker",
+    ],
     category: "Business Intelligence",
-    short: "Transform your data into insightful, interactive dashboards.",
+    short: "Attain maximum benefit from Looker Studio which is a free cloud based tool.",
+    subheadline:
+      "Attain maximum benefit from Looker Studio which is a free cloud based tool.",
+    introduction:
+      "Looker Studio, a cloud based data visualization tool by Google offers an interactive dashboard. The insightful dashboard fetches data from Google Analytics, Google Ads, Big Query, etc. Thus, review your business data story on Looker Studio dashboard and act strategically.",
     description:
-      "Design intuitive, beautifully branded Looker Studio reports that automate weekly client reporting and give leadership instant performance visibility.",
+      "Looker Studio, a cloud based data visualization tool by Google offers an interactive dashboard. The insightful dashboard fetches data from Google Analytics, Google Ads, Big Query, etc. Thus, review your business data story on Looker Studio dashboard and act strategically.",
     Icon: Presentation,
     visualType: "bi",
-    challenge:
-      "Teams waste dozens of hours every month manually copying and pasting screenshots into static presentation decks that are obsolete the moment they are sent.",
+    image: "https://a2zdm.com/looker-studio.jpg",
+    whyMatters: {
+      heading: "Why Looker Studio Matters?",
+      content:
+        "The custom looker studio report helps one in accessing information as per their requirement. Unleash the power of data with end to end analytics solution. Achieve competitive edge over other market competitors. Likely, visualize business opportunities and enhance customer experience.",
+    },
+    howWeDoIt: {
+      heading: "How We Do It",
+      items: [
+        "Efficient Data Management",
+        "Tailored Dashboard Designing",
+        "Automation & Reporting",
+        "Expert Guidance & Consultancy",
+      ],
+    },
+    whatYouGet: {
+      heading: "What You Get",
+      items: [
+        "Visualize data in forms of graphs, charts, pie diagrams, etc.",
+        "Access to insightful data reporting",
+        "Gain connectivity to various data sources",
+        "Share looker studio report to team members, stakeholders, etc.",
+      ],
+    },
+    whoItsFor: {
+      heading: "Who It’s For",
+      items: [
+        "Anyone Individual Having Google Account",
+        "Businesses of all Sizes",
+        "Educational Institutions",
+        "Non- Profit Organizations",
+      ],
+    },
+    expectedOutcomes: {
+      heading: "Expected Outcomes",
+      items: [
+        "Assess & Overview Data",
+        "Actionable Insights",
+        "Strategic Business Decision Making",
+        "Data Modeling & Optimization",
+      ],
+    },
+    whyA2ZDM: {
+      heading: "Why A2ZDM?",
+      items: [
+        "Assurance of Data Security & Confidentiality",
+        "Proven Track Record of Customer Satisfaction",
+        "Comprehensive Analytics Reporting",
+        "Core Team of Analytics",
+      ],
+    },
+    ctaText:
+      "Connect our team of analytics and let us provide best Looker Studio Solution. Book an appointment with our consultants and learn more about Looker Studio.",
     includes: [
-      "Centralized data visualization pulling live numbers automatically",
-      "Real-time reporting accessible to all authorized team members",
-      "Reduced manual reporting work saving hundreds of operational hours",
-      "Improved data accessibility and transparency across the organization",
-    ],
-    methodology: [
-      { step: "01", title: "Stakeholder Metric Discovery", desc: "Identify the critical daily, weekly, and monthly numbers executives need." },
-      { step: "02", title: "Connector Configuration", desc: "Link live sources (GA4, Google Ads, Meta, Search Console, BigQuery)." },
-      { step: "03", title: "UX & Visual Hierarchy Design", desc: "Build clean, branded multi-page dashboards with interactive date filters." },
-      { step: "04", title: "Automated Distribution", desc: "Schedule automated PDF email digests to key executives." },
-    ],
-    deliverables: [
-      "Interactive Multi-Page Looker Studio Dashboard",
-      "Custom Calculated Metrics & Blended Data Sources",
-      "Mobile-Optimized Executive View",
-      "Scheduled Automated Email Reporting System",
+      "Visualize data in forms of graphs, charts, pie diagrams, etc.",
+      "Access to insightful data reporting",
+      "Gain connectivity to various data sources",
+      "Share looker studio report to team members, stakeholders, etc.",
     ],
   },
   {
@@ -1075,6 +2480,66 @@ export const ALL_SERVICES = [
       "Incrementality & Holdout Lift Results",
       "Marginal ROAS Budget Optimization Calculator",
       "Executive Marketing Efficiency Ratio (MER) Dashboard",
+    ],
+  },
+
+  // ----------------------- CBD SEO -----------------------
+  {
+    slug: "cbd-seo",
+    aliases: ["cannabis-seo", "marijuana-seo", "hemp-seo"],
+    name: "CBD SEO",
+    category: "Search Engine Optimization",
+    short: "Build brand authority in the Cannabis & CBD marketplace.",
+    description:
+      "Build the brand's identity with support of a leading Cannabis SEO company. If you have a Cannabis dispensary, Medical Marijuana certificate service, or Cannabis delivery service, consult our cannabis SEO experts and gain valuable insights. We provide legally compliant keyword research, digital PR, influencer outreach, and competitor research to help create a significant online presence and establish credible brand authority.",
+    Icon: Search,
+    visualType: "cbd",
+    includes: [
+      "Legally compliant keyword research for Cannabis brands",
+      "Digital PR & influencer outreach",
+      "Link earning from reputed industry sources",
+      "Online presence & credible brand authority building",
+      "Competitor research & Cannabis market analysis",
+      "Navigation of CBD marketing complexities",
+    ],
+    overview: [
+      {
+        heading: "CBD SEO",
+        paragraphs: [
+          "Build the brand's identity with support of a leading Cannabis SEO company. If you have a Cannabis dispensary or Medical Marijuana certificate service or Cannabis delivery service, then consult our cannabis SEO expert and gain valuable insights. As we provide legally compliant keyword, create digital public relations, and with influencer outreach and competitors research, our team assists in creating significant online presence. Whereas with the deeper understanding of Cannabis industry, we help you establish a credible brand authority.",
+          "Besides, Cannabis or Marijuana trade and commerce faces multiple restrictions and challenges. Thus, connect with our project manager and seek professional guidance in the direction of hemp SEO. As we help you navigate the complexities of CBD marketing. Thereby, achieve business success with organic visitors and qualified leads. And attain sustainable long term SEO results.",
+          "Enhance the ranking of your CBD site with CBD SEO. The quality market and target audience research, covers important elements of digital marketing and promotion. Bridging the gaps, and several restrictions, we help the client succeed in the competitive marketplace. Meanwhile, by following the regulations defined for Cannabis SEO and with experience in this domain, we provide proven strategies for generating traffic.",
+        ],
+      },
+    ],
+    sections: [
+      {
+        heading: "Link Earnings",
+        paragraphs: [
+          "Boosting your sites organic growth with effective link building strategies. We follow the best practices for generating the links. Link earning is linking the content of the website to some other credible and popular site which helps in driving traffic. Link earning is one of the vital elements for search engine optimization.",
+          "Fostering online ranking and credibility, the quality links helps in earning trust and recognition. Thus, rank high on SERPs with backlink strategy. And gain the access to larger audience reach. Our dedicated team of SEO experts assists you in link earning. Thus, earn links from the reputed sites and manage Google algorithms which further enhances your brand's authority with authentic backlinks.",
+          "The team focuses on multiple activities for generating links, which includes:",
+        ],
+        bullets: [
+          "Targeting the audience with high quality content",
+          "Promotion of content i.e., guest posting on multiple channels",
+          "Online community building through social media channels",
+          "Correcting & building the broken links",
+          "Rectifying the bad and scam links",
+        ],
+        closing:
+          "From our competency and experience, let us plan the right link earning strategy for sustainable growth. Successfully direct the traffic through link earning. And increase your brand value with increased visibility on different platforms.",
+      },
+      {
+        heading: "PR",
+        paragraphs: [
+          "Establish public relations and reach new heights with PR activities. Through media coverage and influencer marketing, gain brand credibility and awareness. Whereas gain competitive edge with professional PR services.",
+          "Being PR marketing company, we share your brand story to the world with innovation and creativity. Shaping your business perception. Our sound PR strategy are tailored to the industry and client's requirement. Whatsoever, is your industry, connect with us for integrated PR campaigns.",
+          "Understanding the tailored requirements of different industries, we serve your demands with customised digital PR strategies. Thereby, succeed in the competitive marketplace with compelling PR campaign.",
+          "Shine your brand's identity with online reputation management. As we create a strong public reputation through digital PR activities such as media outreach, press releases, and influencer partnership. Achieve your company's goal by building long lasting public reputation.",
+          "Amidst several digital marketing opportunities, public relations create all the difference. Thus, raise your brand's voice. Stand out from the crowd by having visibility at desired platforms. Whether you are a start-up, or mid age company or a topmost brand, build public relations online with an effective media coverage. As our expert PR team develops communication channels and improves engagement rate with the target audience.",
+        ],
+      },
     ],
   },
 ];

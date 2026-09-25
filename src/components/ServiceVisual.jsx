@@ -10,11 +10,16 @@ import {
   Cpu,
   ShieldCheck,
   Zap,
+  Leaf,
+  Link2,
+  Megaphone,
+  ArrowRight,
 } from "lucide-react";
 
 /**
  * Generates tailored, premium MarTech visual graphics for each service category:
  * - AEO: AI citation graph & conversational engine response card
+ * - CBD: CBD SEO Growth Strategy dashboard (Keyword research, Link earnings, Digital PR, Competitor research)
  * - SEO: Organic ranking growth curve, SERP 1st page tracker & keyword metrics
  * - Analytics: GA4 event streaming pipeline & conversion funnel
  * - Predictive: Time-series forecasting curve with confidence interval & predictive scores
@@ -80,6 +85,109 @@ export default function ServiceVisual({ type = "seo", title = "Service" }) {
         <div className="relative z-10 flex items-center justify-between text-xs text-white/50 pt-2 font-mono">
           <span>Schema: Organization & Entity</span>
           <span className="text-white/70">JSON-LD Live</span>
+        </div>
+      </div>
+    );
+  }
+
+  if (type === "cbd") {
+    return (
+      <div className="relative w-full aspect-[4/3] rounded-3xl bg-gradient-to-br from-[#1E1E2A] to-[#121218] border border-white/10 p-6 sm:p-7 flex flex-col justify-between overflow-hidden shadow-2xl text-white">
+        {/* Ambient Glow */}
+        <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-[#2F6F5E]/25 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-16 -left-16 w-56 h-56 rounded-full bg-[#F2A93B]/15 blur-3xl pointer-events-none" />
+
+        {/* Top Header */}
+        <div className="relative z-10 flex items-center justify-between border-b border-white/10 pb-3.5">
+          <div className="flex items-center gap-2.5">
+            <span className="w-8 h-8 rounded-lg bg-[#2F6F5E]/30 text-[#4EAA93] flex items-center justify-center border border-[#2F6F5E]/50">
+              <Leaf size={16} />
+            </span>
+            <div>
+              <div className="text-xs font-semibold text-white tracking-wide">
+                CBD SEO Strategy
+              </div>
+              <div className="text-[11px] text-white/50">Cannabis SEO Framework</div>
+            </div>
+          </div>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2F6F5E]/30 text-[#4EAA93] text-xs font-semibold border border-[#2F6F5E]/50">
+            <TrendingUp size={12} /> Organic Growth
+          </span>
+        </div>
+
+        {/* Service Core Areas Grid */}
+        <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-2.5 my-auto">
+          {/* Keyword Research */}
+          <div className="rounded-xl bg-white/[0.04] border border-white/10 p-3 flex items-start gap-2.5">
+            <span className="w-7 h-7 rounded-lg bg-[#F2A93B]/15 text-[#F2A93B] flex items-center justify-center shrink-0 mt-0.5 border border-[#F2A93B]/20">
+              <Search size={14} />
+            </span>
+            <div>
+              <div className="text-xs font-semibold text-white">Keyword Research</div>
+              <div className="text-[11px] text-white/50 leading-snug mt-0.5">
+                Legally compliant keyword strategy
+              </div>
+            </div>
+          </div>
+
+          {/* Link Earnings */}
+          <div className="rounded-xl bg-white/[0.04] border border-white/10 p-3 flex items-start gap-2.5">
+            <span className="w-7 h-7 rounded-lg bg-[#4EAA93]/15 text-[#4EAA93] flex items-center justify-center shrink-0 mt-0.5 border border-[#4EAA93]/20">
+              <Link2 size={14} />
+            </span>
+            <div>
+              <div className="text-xs font-semibold text-white">Link Earnings</div>
+              <div className="text-[11px] text-white/50 leading-snug mt-0.5">
+                Quality backlinks &amp; industry authority
+              </div>
+            </div>
+          </div>
+
+          {/* Digital PR */}
+          <div className="rounded-xl bg-white/[0.04] border border-white/10 p-3 flex items-start gap-2.5">
+            <span className="w-7 h-7 rounded-lg bg-[#F2A93B]/15 text-[#F2A93B] flex items-center justify-center shrink-0 mt-0.5 border border-[#F2A93B]/20">
+              <Megaphone size={14} />
+            </span>
+            <div>
+              <div className="text-xs font-semibold text-white">Digital PR</div>
+              <div className="text-[11px] text-white/50 leading-snug mt-0.5">
+                Media coverage &amp; influencer outreach
+              </div>
+            </div>
+          </div>
+
+          {/* Competitor Research */}
+          <div className="rounded-xl bg-white/[0.04] border border-white/10 p-3 flex items-start gap-2.5">
+            <span className="w-7 h-7 rounded-lg bg-[#4EAA93]/15 text-[#4EAA93] flex items-center justify-center shrink-0 mt-0.5 border border-[#4EAA93]/20">
+              <BarChart3 size={14} />
+            </span>
+            <div>
+              <div className="text-xs font-semibold text-white">Competitor Research</div>
+              <div className="text-[11px] text-white/50 leading-snug mt-0.5">
+                Market &amp; competitor analysis
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Flow: Brand Authority -> Organic Traffic -> Qualified Leads */}
+        <div className="relative z-10 pt-3 border-t border-white/10">
+          <div className="flex items-center justify-between gap-1 text-[11px] font-medium text-white/70">
+            <span className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-white/[0.04] border border-white/5 text-white/90">
+              <ShieldCheck size={12} className="text-[#4EAA93]" />
+              Brand Authority
+            </span>
+            <ArrowRight size={12} className="text-white/30 shrink-0" />
+            <span className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-white/[0.04] border border-white/5 text-white/90">
+              <TrendingUp size={12} className="text-[#F2A93B]" />
+              Organic Traffic
+            </span>
+            <ArrowRight size={12} className="text-white/30 shrink-0" />
+            <span className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-white/[0.04] border border-white/5 text-white/90">
+              <CheckCircle2 size={12} className="text-[#4EAA93]" />
+              Qualified Leads
+            </span>
+          </div>
         </div>
       </div>
     );
