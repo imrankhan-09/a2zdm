@@ -5,6 +5,7 @@ import { BLOG_POSTS, ALL_BLOG_POSTS } from "../data/site";
 import CTASection from "../components/CTASection";
 import Reveal from "../components/Reveal";
 import NotFound from "./NotFound";
+import { useSEO } from "../hooks/useSEO";
 
 export default function BlogPost() {
   const { slug } = useParams();
@@ -16,12 +17,15 @@ export default function BlogPost() {
       (p.aliases && p.aliases.includes(slug))
   );
 
+  useSEO({
+    title: post ? (post.seoTitle || `${post.title} | A2ZDM Blog`) : "Blog | A2ZDM",
+    description: post ? (post.metaDescription || post.excerpt || "") : "",
+    canonical: `https://a2zdm.com/blog/${slug}`,
+  });
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (post) {
-      document.title = `${post.title} | A2ZDM Blog`;
-    }
-  }, [post, slug]);
+  }, [slug]);
 
   if (!post) {
     return <NotFound />;

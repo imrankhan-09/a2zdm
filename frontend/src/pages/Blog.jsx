@@ -5,6 +5,8 @@ import BlogCard from "../components/BlogCard";
 import CTASection from "../components/CTASection";
 import Reveal, { RevealGroup } from "../components/Reveal";
 import { BLOG_FILTERS, BLOG_POSTS, blogBucket } from "../data/site";
+import { useSEO } from "../hooks/useSEO";
+import { PAGE_SEO } from "../data/seo";
 
 const PAGE_SIZE = 6;
 
@@ -13,6 +15,8 @@ export default function Blog() {
   const [page, setPage] = useState(1);
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
+
+  useSEO(PAGE_SEO.blog);
 
   const filtered = useMemo(() => {
     if (filter === "All") return BLOG_POSTS;

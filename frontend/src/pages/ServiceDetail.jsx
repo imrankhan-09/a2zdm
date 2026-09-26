@@ -57,11 +57,15 @@ export default function ServiceDetail() {
     const originalTitle = document.title;
     document.title = service.seoTitle || `${service.name} | A2ZDM Services`;
 
-    // 2. Meta Description
-    let metaDesc = document.querySelector('meta[name="description"]');
+    // 2. Meta Description — ensure exactly one tag, no duplicates
+    const metaTags = document.querySelectorAll('meta[name="description"]');
+    if (metaTags.length > 1) {
+      for (let i = 1; i < metaTags.length; i++) metaTags[i].remove();
+    }
+    let metaDesc = metaTags[0];
     if (!metaDesc) {
       metaDesc = document.createElement("meta");
-      metaDesc.name = "description";
+      metaDesc.setAttribute("name", "description");
       document.head.appendChild(metaDesc);
     }
     const originalDesc = metaDesc.getAttribute("content");
@@ -70,16 +74,27 @@ export default function ServiceDetail() {
       service.metaDescription || service.description
     );
 
-    // 3. Canonical URL
-    let linkCanonical = document.querySelector('link[rel="canonical"]');
+    // 3. Canonical URL — ensure exactly one tag, no duplicates
+    // Strictly uses https://a2zdm.com (never www)
+    const rawCanonical =
+      service.canonicalUrl ||
+      `https://a2zdm.com/services/${service.slug}/`;
+    const canonicalUrl = rawCanonical.replace(
+      /^https?:\/\/(www\.)?a2zdm\.com/,
+      "https://a2zdm.com"
+    );
+
+    const canonicalTags = document.querySelectorAll('link[rel="canonical"]');
+    if (canonicalTags.length > 1) {
+      for (let i = 1; i < canonicalTags.length; i++) canonicalTags[i].remove();
+    }
+    let linkCanonical = canonicalTags[0];
     if (!linkCanonical) {
       linkCanonical = document.createElement("link");
-      linkCanonical.rel = "canonical";
+      linkCanonical.setAttribute("rel", "canonical");
       document.head.appendChild(linkCanonical);
     }
-    const canonicalUrl =
-      service.canonicalUrl ||
-      `https://www.a2zdm.com/services/${service.slug}/`;
+    const originalCanonical = linkCanonical.getAttribute("href");
     linkCanonical.setAttribute("href", canonicalUrl);
 
     // 4. FAQ Schema (FAQPage JSON-LD)
@@ -109,6 +124,7 @@ export default function ServiceDetail() {
     }
 
     // 5. Service & Breadcrumb Schema (JSON-LD)
+    // All URLs strictly use https://a2zdm.com (never www)
     let serviceScript = document.getElementById("service-schema");
     if (!serviceScript) {
       serviceScript = document.createElement("script");
@@ -127,7 +143,7 @@ export default function ServiceDetail() {
           provider: {
             "@type": "Organization",
             name: "A2ZDM",
-            url: "https://www.a2zdm.com/",
+            url: "https://a2zdm.com/",
           },
           description: service.metaDescription || service.description,
           url: canonicalUrl,
@@ -140,13 +156,13 @@ export default function ServiceDetail() {
               "@type": "ListItem",
               position: 1,
               name: "Home",
-              item: "https://www.a2zdm.com/",
+              item: "https://a2zdm.com/",
             },
             {
               "@type": "ListItem",
               position: 2,
               name: "Services",
-              item: "https://www.a2zdm.com/services",
+              item: "https://a2zdm.com/services",
             },
             {
               "@type": "ListItem",
@@ -164,6 +180,12 @@ export default function ServiceDetail() {
       document.title = originalTitle;
       if (originalDesc) {
         metaDesc.setAttribute("content", originalDesc);
+      }
+      // Restore canonical to what it was before this page mounted
+      if (originalCanonical) {
+        linkCanonical.setAttribute("href", originalCanonical);
+      } else {
+        linkCanonical.remove();
       }
       const curFaq = document.getElementById("faq-schema");
       if (curFaq) curFaq.remove();

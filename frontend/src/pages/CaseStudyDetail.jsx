@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowUpRight, CheckCircle2, Quote } from "lucide-react";
 import CTASection from "../components/CTASection";
 import Reveal from "../components/Reveal";
 import NotFound from "./NotFound";
+import { useSEO } from "../hooks/useSEO";
 
 // ---------------------------------------------------------------------------
 // Case Study data — add new entries here as internal pages are created.
@@ -145,12 +146,19 @@ export default function CaseStudyDetail() {
   const { slug } = useParams();
   const study = CASE_STUDY_DETAIL[slug];
 
+  useSEO({
+    title: study
+      ? (study.seoTitle || study.title || `${study.client} Case Study | A2ZDM`)
+      : "Case Study | A2ZDM",
+    description: study
+      ? (study.metaDescription || study.description || study.summary || "")
+      : "",
+    canonical: `https://a2zdm.com/case-studies/${slug}`,
+  });
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (study) {
-      document.title = `${study.client} Case Study | A2ZDM`;
-    }
-  }, [study, slug]);
+  }, [slug]);
 
   if (!study) {
     return <NotFound />;

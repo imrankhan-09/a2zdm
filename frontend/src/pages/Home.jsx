@@ -5,6 +5,8 @@ import Testimonials from "../components/Testimonials";
 import ClientLogos from "../components/ClientLogos";
 import HomeBlog from "../components/HomeBlog";
 import CTA from "../components/CTA";
+import { useSEO } from "../hooks/useSEO";
+import { PAGE_SEO } from "../data/seo";
 
 /**
  * Home page:
@@ -17,6 +19,8 @@ import CTA from "../components/CTA";
  * CTA.
  */
 export default function Home() {
+  useSEO(PAGE_SEO.home);
+
   return (
     <>
       <Hero />

@@ -4,6 +4,8 @@ import TeamCarousel from "../components/TeamCarousel";
 import CTASection from "../components/CTASection";
 import Reveal, { RevealGroup } from "../components/Reveal";
 import { TEAM, VALUES } from "../data/site";
+import { useSEO } from "../hooks/useSEO";
+import { PAGE_SEO } from "../data/seo";
 
 const TRADITIONAL = [
   "Spray-and-pray campaigns",
@@ -27,6 +29,8 @@ const CERTS = [
 ];
 
 export default function About() {
+  useSEO(PAGE_SEO.about);
+
   return (
     <>
       {/* Hero */}

@@ -3,6 +3,8 @@ import CTASection from "../components/CTASection";
 import Reveal from "../components/Reveal";
 import { RevealGroup } from "../components/Reveal";
 import { CASE_STUDIES } from "../data/site";
+import { useSEO } from "../hooks/useSEO";
+import { PAGE_SEO } from "../data/seo";
 import { ArrowUpRight, Sparkles, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -22,6 +24,8 @@ const OUTCOME_BANNERS = [
 ];
 
 export default function CaseStudies() {
+  useSEO(PAGE_SEO.caseStudies);
+
   return (
     <>
       {/* Hero */}

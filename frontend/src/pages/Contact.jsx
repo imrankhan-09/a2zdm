@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Mail, MapPin, Phone, Send, MailCheck, Clock, Star } from "lucide-react";
 import Reveal from "../components/Reveal";
 import { SERVICES } from "../data/site";
+import { useSEO } from "../hooks/useSEO";
+import { PAGE_SEO } from "../data/seo";
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
@@ -12,6 +14,8 @@ export default function Contact() {
     budget: "",
     message: "",
   });
+
+  useSEO(PAGE_SEO.contact);
 
   const handleChange = (e) => {
     const { id, value } = e.target;

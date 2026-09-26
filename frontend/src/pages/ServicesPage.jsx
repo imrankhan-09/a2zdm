@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
@@ -18,6 +18,8 @@ import Reveal, { RevealGroup, RevealItem } from "../components/Reveal";
 import CountUp from "../components/CountUp";
 import CTASection from "../components/CTASection";
 import { ALL_SERVICES } from "../data/site";
+import { useSEO } from "../hooks/useSEO";
+import { PAGE_SEO } from "../data/seo";
 
 /* ---------------------------------- data ---------------------------------- */
 
@@ -143,16 +145,7 @@ function ModernServiceCard({ service, index }) {
 export default function ServicesPage() {
   const [activeCategory, setActiveCategory] = useState("all");
 
-  useEffect(() => {
-    document.title = "Digital Growth Services | A2ZDM MarTech Agency";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        "content",
-        "Explore A2ZDM's comprehensive digital growth services: Answer Engine Optimization, Search Engine Optimization, Digital Analytics, Predictive Analytics, Business Intelligence, and Pay Per Click Management."
-      );
-    }
-  }, []);
+  useSEO(PAGE_SEO.services);
 
   const filteredServices = useMemo(() => {
     if (activeCategory === "all") return ALL_SERVICES;
