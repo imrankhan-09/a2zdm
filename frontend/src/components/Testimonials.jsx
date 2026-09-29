@@ -59,7 +59,7 @@ function Avatar({ name, image }) {
 
 export default function Testimonials() {
   return (
-    <section className="py-20 sm:py-28 bg-[#F3EEE1]">
+    <section className="py-14 sm:py-20 bg-[#F3EEE1]">
       <div className="max-w-container mx-auto px-5 sm:px-8">
         <Reveal className="max-w-2xl">
           <div className="text-xs font-bold text-[#2F6F5E] uppercase tracking-wider mb-3">
@@ -73,7 +73,7 @@ export default function Testimonials() {
           </p>
         </Reveal>
 
-        <RevealGroup className="grid md:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-14">
+        <RevealGroup className="grid md:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-10">
           {TESTIMONIALS.map((t) => (
             <RevealItem key={t.name} className="h-full">
               <div className="h-full flex flex-col rounded-[24px] border border-[rgba(20,20,28,0.10)] bg-white p-7 sm:p-9 shadow-[0_4px_24px_-6px_rgba(20,20,28,0.05)] hover:shadow-[0_12px_36px_-8px_rgba(20,20,28,0.09)] transition-all">

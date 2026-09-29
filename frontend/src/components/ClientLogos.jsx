@@ -79,7 +79,7 @@ function ClientLogoTile({ client }) {
 
 export default function ClientLogos() {
   return (
-    <section className="py-20 sm:py-28 bg-[#17171F] text-white overflow-hidden border-y border-white/10 relative">
+    <section className="py-14 sm:py-20 bg-[#17171F] text-white overflow-hidden border-y border-white/10 relative">
       {/* Ambient background glows */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-0 right-1/4 w-96 h-96 rounded-full bg-[#F2A93B]/10 blur-[120px]" />
@@ -110,7 +110,7 @@ export default function ClientLogos() {
       </div>
 
       {/* Infinite Smooth Scrolling Marquee */}
-      <div className="mt-14 sm:mt-16 w-full overflow-hidden mask-fade py-4 relative">
+      <div className="mt-10 sm:mt-12 w-full overflow-hidden mask-fade py-4 relative">
         <div className="animate-marquee-smooth flex items-center gap-6 sm:gap-8">
           {/* First set of client logos */}
           {CLIENTS.map((client, i) => (
@@ -124,7 +124,7 @@ export default function ClientLogos() {
       </div>
 
       {/* 3 Industry Vertical Cards */}
-      <div className="relative max-w-container mx-auto px-5 sm:px-8 mt-16 sm:mt-20">
+      <div className="relative max-w-container mx-auto px-5 sm:px-8 mt-10 sm:mt-12">
         <RevealGroup className="grid sm:grid-cols-3 gap-6" stagger={0.08}>
           {INDUSTRIES.map((ind) => {
             const Icon = ind.icon;

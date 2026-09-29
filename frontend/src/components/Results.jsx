@@ -27,7 +27,7 @@ const STAT_ROW = [
 
 export default function Results() {
   return (
-    <section className="py-20 sm:py-28 bg-[#FBF8F3]">
+    <section className="py-14 sm:py-20 bg-[#FBF8F3]">
       <div className="max-w-container mx-auto px-5 sm:px-8">
         <Reveal className="max-w-2xl">
           <div className="text-xs font-bold text-[#2F6F5E] uppercase tracking-wider mb-3">
@@ -41,7 +41,7 @@ export default function Results() {
           </p>
         </Reveal>
 
-        <RevealGroup className="grid sm:grid-cols-2 gap-6 sm:gap-8 mt-12 sm:mt-14">
+        <RevealGroup className="grid sm:grid-cols-2 gap-6 sm:gap-8 mt-8 sm:mt-10">
           {HIGHLIGHTS.map((h) => (
             <RevealItem key={h.title} className="h-full">
               <div className="h-full rounded-[24px] border border-[rgba(20,20,28,0.10)] bg-white p-8 sm:p-10 shadow-[0_4px_24px_-6px_rgba(20,20,28,0.05)] hover:shadow-[0_12px_36px_-8px_rgba(20,20,28,0.09)] transition-all">
@@ -57,7 +57,7 @@ export default function Results() {
           ))}
         </RevealGroup>
 
-        <RevealGroup className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mt-6 sm:mt-8 rounded-[24px] border border-[rgba(20,20,28,0.10)] bg-white p-6 sm:p-8 shadow-[0_4px_24px_-6px_rgba(20,20,28,0.05)]">
+        <RevealGroup className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mt-5 sm:mt-6 rounded-[24px] border border-[rgba(20,20,28,0.10)] bg-white p-6 sm:p-8 shadow-[0_4px_24px_-6px_rgba(20,20,28,0.05)]">
           {STAT_ROW.map((s) => (
             <RevealItem key={s.label} className="text-center p-3">
               <div className="font-mono text-3xl sm:text-4xl font-bold text-[#2F6F5E]">

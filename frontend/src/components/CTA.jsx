@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 
 export default function CTA() {
   return (
-    <section className="py-24 sm:py-28 bg-[#17171F] text-white text-center relative overflow-hidden">
+    <section className="py-16 sm:py-20 bg-[#17171F] text-white text-center relative overflow-hidden">
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_50%_0%,#F2A93B,transparent_65%)]" />
       <div className="max-w-container mx-auto px-5 sm:px-8 relative z-10">
         <Reveal>
@@ -21,7 +21,7 @@ export default function CTA() {
         <Reveal delay={0.1}>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 mt-8 px-9 py-4 rounded-full bg-[#F2A93B] hover:bg-[#D98F1F] text-[#17171F] font-semibold text-base transition-all duration-200 shadow-md hover:shadow-lg hover:scale-[1.02]"
+            className="inline-flex items-center gap-2 mt-6 px-9 py-4 rounded-full bg-[#F2A93B] hover:bg-[#D98F1F] text-[#17171F] font-semibold text-base transition-all duration-200 shadow-md hover:shadow-lg hover:scale-[1.02]"
           >
             Talk to an expert <ArrowRight size={16} />
           </Link>

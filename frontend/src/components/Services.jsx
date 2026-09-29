@@ -36,6 +36,7 @@ const SERVICES = [
     body: "Build search visibility for CBD businesses with compliant keyword targeting, content optimization, technical SEO, and organic growth strategies.",
     to: "/services/cbd-seo",
     image: "https://a2zdm.com/cbd-seo.jpg",
+    hideOnHome: true,
   },
 ];
 
@@ -95,7 +96,7 @@ function ServiceCardItem({ s }) {
 
 export default function Services() {
   return (
-    <section className="py-20 sm:py-28 bg-[#F3EEE1]">
+    <section className="py-14 sm:py-20 bg-[#F3EEE1]">
       <div className="max-w-container mx-auto px-5 sm:px-8">
         <Reveal className="max-w-2xl">
           <div className="text-xs font-bold text-[#2F6F5E] uppercase tracking-wider mb-3">
@@ -111,13 +112,13 @@ export default function Services() {
           </p>
         </Reveal>
 
-        <RevealGroup className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-14">
-          {SERVICES.map((s) => (
+        <RevealGroup className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-10">
+          {SERVICES.filter((s) => !s.hideOnHome).map((s) => (
             <ServiceCardItem key={s.title} s={s} />
           ))}
         </RevealGroup>
 
-        <Reveal delay={0.1} className="mt-12 text-center">
+        <Reveal delay={0.1} className="mt-8 text-center">
           <Link
             to="/services"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white hover:bg-[#17171F] text-[#17171F] hover:text-white border border-[rgba(20,20,28,0.12)] text-sm font-semibold transition-all duration-200 shadow-xs hover:shadow-md"

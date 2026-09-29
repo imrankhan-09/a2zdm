@@ -1,5 +1,5 @@
-import { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { useMemo, useState, useRef, useEffect } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -17,9 +17,15 @@ import {
 import Reveal, { RevealGroup, RevealItem } from "../components/Reveal";
 import CountUp from "../components/CountUp";
 import CTASection from "../components/CTASection";
+import Pagination from "../components/Pagination";
 import { ALL_SERVICES } from "../data/site";
 import { useSEO } from "../hooks/useSEO";
 import { PAGE_SEO } from "../data/seo";
+
+/* ---------------------------------- constants ---------------------------------- */
+
+const PAGE_SIZE_ALL = 9;
+const PAGE_SIZE_CATEGORY = 6;
 
 /* ---------------------------------- data ---------------------------------- */
 
@@ -73,47 +79,50 @@ function ModernServiceCard({ service, index }) {
   const num = String(index + 1).padStart(2, "0");
 
   return (
-    <RevealItem className="h-full">
-      <article className="group h-full flex flex-col justify-between rounded-[24px] border border-[rgba(20,20,28,0.10)] bg-white p-7 sm:p-8 hover:border-[#17171F]/30 hover:-translate-y-1.5 transition-all duration-300 shadow-[0_4px_24px_-6px_rgba(20,20,28,0.04)] hover:shadow-[0_12px_36px_-8px_rgba(20,20,28,0.08)]">
-        <div>
+    <RevealItem className="h-full flex flex-col">
+      <article className="group w-full h-full flex flex-col justify-between rounded-2xl sm:rounded-[24px] border border-[rgba(20,20,28,0.10)] bg-white p-5 sm:p-6 lg:p-7 xl:p-8 hover:border-[#17171F]/30 hover:-translate-y-1.5 transition-all duration-300 shadow-[0_4px_24px_-6px_rgba(20,20,28,0.04)] hover:shadow-[0_12px_36px_-8px_rgba(20,20,28,0.08)]">
+        <div className="flex-1 flex flex-col min-w-0">
           {/* Card Top Row */}
-          <div className="flex items-center justify-between mb-6">
-            <span className="w-12 h-12 rounded-2xl bg-[#2F6F5E]/10 text-[#2F6F5E] flex items-center justify-center group-hover:bg-[#F2A93B] group-hover:text-[#17171F] transition-colors duration-300 shadow-xs">
-              <Icon size={22} />
+          <div className="flex items-center justify-between gap-3 mb-5 sm:mb-6">
+            <span className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-[#2F6F5E]/10 text-[#2F6F5E] flex items-center justify-center shrink-0 group-hover:bg-[#F2A93B] group-hover:text-[#17171F] transition-colors duration-300 shadow-xs">
+              <Icon size={22} className="shrink-0" />
             </span>
-            <span className="font-mono text-xs font-semibold text-[#5C5C6F]/70">
+            <span className="font-mono text-xs font-semibold text-[#5C5C6F]/70 shrink-0">
               #{num}
             </span>
           </div>
 
           {/* Category Tag */}
-          <span className="text-[11px] font-semibold uppercase tracking-wider text-[#2F6F5E] block mb-2">
+          <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#2F6F5E] block mb-2 break-words">
             {service.category}
           </span>
 
           {/* Title */}
-          <h3 className="font-display font-bold text-xl sm:text-2xl text-[#17171F] group-hover:text-[#2F6F5E] transition-colors leading-snug">
-            <Link to={`/services/${service.slug}`}>{service.name}</Link>
+          <h3 className="font-display font-bold text-lg sm:text-xl lg:text-2xl text-[#17171F] group-hover:text-[#2F6F5E] transition-colors leading-snug break-words">
+            <Link to={`/services/${service.slug}`} className="hover:underline">
+              {service.name}
+            </Link>
           </h3>
 
-          {/* Description */}
-          <p className="text-sm text-[#5C5C6F] leading-relaxed mt-3 mb-5 line-clamp-3">
+          {/* Description - fully displayed with no clipping */}
+          <p className="text-xs sm:text-sm text-[#5C5C6F] leading-relaxed mt-2.5 sm:mt-3 mb-5 break-words">
             {service.description}
           </p>
 
           {/* Key Capabilities checklist */}
           {service.includes && service.includes.length > 0 && (
-            <ul className="space-y-2 mb-6 border-t border-[rgba(20,20,28,0.06)] pt-4">
-              {service.includes.slice(0, 3).map((item, idx) => (
+            <ul className="space-y-2 sm:space-y-2.5 mb-6 border-t border-[rgba(20,20,28,0.06)] pt-4">
+              {service.includes.map((item, idx) => (
                 <li
                   key={idx}
-                  className="flex items-start gap-2 text-xs text-[#4A4A5A] leading-relaxed"
+                  className="flex items-start gap-2.5 text-xs text-[#4A4A5A] leading-relaxed"
                 >
                   <Check
                     size={14}
                     className="text-[#2F6F5E] mt-0.5 shrink-0"
+                    aria-hidden="true"
                   />
-                  <span>{item}</span>
+                  <span className="break-words min-w-0 flex-1">{item}</span>
                 </li>
               ))}
             </ul>
@@ -121,19 +130,21 @@ function ModernServiceCard({ service, index }) {
         </div>
 
         {/* CTA Link */}
-        <div className="pt-4 border-t border-[rgba(20,20,28,0.06)] flex items-center justify-between">
+        <div className="mt-auto pt-4 border-t border-[rgba(20,20,28,0.06)] flex items-center justify-between gap-3 flex-wrap sm:flex-nowrap">
           <Link
             to={`/services/${service.slug}`}
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#17171F] group-hover:text-[#2F6F5E] transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#17171F] group-hover:text-[#2F6F5E] transition-colors shrink-0"
             aria-label={`View details for ${service.name}`}
           >
-            Learn More
+            <span>Learn More</span>
             <ArrowUpRight
               size={15}
-              className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+              className="shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
             />
           </Link>
-          <span className="text-xs text-[#5C5C6F]/60">Full Details →</span>
+          <span className="text-[11px] sm:text-xs text-[#5C5C6F]/60 shrink-0 font-medium">
+            Full Details →
+          </span>
         </div>
       </article>
     </RevealItem>
@@ -143,10 +154,20 @@ function ModernServiceCard({ service, index }) {
 /* ---------------------------------- Page ---------------------------------- */
 
 export default function ServicesPage() {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [activeCategory, setActiveCategory] = useState("all");
+
+  const servicesSectionRef = useRef(null);
+
+  // Initialize page from URL query param if present
+  const pageParam = parseInt(searchParams.get("page") || "1", 10);
+  const [currentPage, setCurrentPage] = useState(
+    !isNaN(pageParam) && pageParam > 0 ? pageParam : 1
+  );
 
   useSEO(PAGE_SEO.services);
 
+  // Filter services by selected category
   const filteredServices = useMemo(() => {
     if (activeCategory === "all") return ALL_SERVICES;
     return ALL_SERVICES.filter((s) => {
@@ -160,6 +181,52 @@ export default function ServicesPage() {
       return true;
     });
   }, [activeCategory]);
+
+  // Page size: 9 for 'all', 6 for individual categories
+  const pageSize = activeCategory === "all" ? PAGE_SIZE_ALL : PAGE_SIZE_CATEGORY;
+  const totalItems = filteredServices.length;
+  const totalPages = Math.max(1, Math.ceil(totalItems / pageSize));
+  const safeCurrentPage = Math.min(Math.max(1, currentPage), totalPages);
+
+  // Calculate slice range for current page
+  const startIndex = (safeCurrentPage - 1) * pageSize;
+  const endIndex = Math.min(startIndex + pageSize, totalItems);
+
+  const visibleServices = useMemo(() => {
+    return filteredServices.slice(startIndex, endIndex);
+  }, [filteredServices, startIndex, endIndex]);
+
+  // Handle category tab change & reset page to 1
+  const handleCategoryChange = (catId) => {
+    setActiveCategory(catId);
+    setCurrentPage(1);
+
+    const newParams = new URLSearchParams(searchParams);
+    newParams.delete("page");
+    setSearchParams(newParams, { replace: true });
+  };
+
+  // Handle page change, update query params, and smooth-scroll to services section
+  const handlePageChange = (newPage) => {
+    if (newPage < 1 || newPage > totalPages) return;
+    setCurrentPage(newPage);
+
+    const newParams = new URLSearchParams(searchParams);
+    if (newPage === 1) {
+      newParams.delete("page");
+    } else {
+      newParams.set("page", String(newPage));
+    }
+    setSearchParams(newParams, { replace: true });
+
+    // Smooth scroll to top of services grid section
+    if (servicesSectionRef.current) {
+      servicesSectionRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
     <div className="bg-[#FBF8F3] text-[#17171F] overflow-x-clip">
@@ -263,8 +330,8 @@ export default function ServicesPage() {
                 <button
                   key={c.id}
                   type="button"
-                  onClick={() => setActiveCategory(c.id)}
-                  className={`inline-flex items-center gap-2 shrink-0 px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 ${
+                  onClick={() => handleCategoryChange(c.id)}
+                  className={`inline-flex items-center gap-2 shrink-0 px-4 py-2 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
                     isActive
                       ? "bg-[#F2A93B] text-[#17171F] shadow-sm"
                       : "bg-white/10 text-white/80 hover:bg-white/15 hover:text-white"
@@ -280,7 +347,7 @@ export default function ServicesPage() {
       </nav>
 
       {/* -------------------------- SERVICES GRID --------------------------- */}
-      <section className="py-16 sm:py-24 bg-[#FBF8F3]">
+      <section ref={servicesSectionRef} className="py-16 sm:py-24 bg-[#FBF8F3]">
         <div className="max-w-container mx-auto px-5 sm:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
             <div>
@@ -293,15 +360,18 @@ export default function ServicesPage() {
                   : CATEGORIES.find((c) => c.id === activeCategory)?.label}
               </h2>
               <p className="text-sm text-[#5C5C6F] mt-1">
-                Showing {filteredServices.length}{" "}
-                {filteredServices.length === 1 ? "service" : "services"}
+                {totalItems === 0
+                  ? "Showing 0 services"
+                  : `Showing ${startIndex + 1}–${endIndex} of ${totalItems} ${
+                      totalItems === 1 ? "service" : "services"
+                    }`}
               </p>
             </div>
             {activeCategory !== "all" && (
               <button
                 type="button"
-                onClick={() => setActiveCategory("all")}
-                className="text-xs font-semibold text-[#E31C79] hover:underline"
+                onClick={() => handleCategoryChange("all")}
+                className="text-xs font-semibold text-[#E31C79] hover:underline cursor-pointer"
               >
                 Reset to all services
               </button>
@@ -309,17 +379,25 @@ export default function ServicesPage() {
           </div>
 
           <RevealGroup
+            key={`${activeCategory}-p${safeCurrentPage}`}
             className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7"
             stagger={0.04}
           >
-            {filteredServices.map((service, index) => (
+            {visibleServices.map((service, index) => (
               <ModernServiceCard
                 key={service.slug}
                 service={service}
-                index={index}
+                index={startIndex + index}
               />
             ))}
           </RevealGroup>
+
+          {/* Client-Side Pagination Controls */}
+          <Pagination
+            currentPage={safeCurrentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+          />
         </div>
       </section>
 

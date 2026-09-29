@@ -28,7 +28,7 @@ const item = {
 
 export default function Hero() {
   return (
-    <section className="relative pt-12 pb-20 sm:pt-16 sm:pb-28 overflow-hidden bg-[#FBF8F3]">
+    <section className="relative pt-12 pb-16 sm:pt-16 sm:pb-20 overflow-hidden bg-[#FBF8F3]">
       {/* Subtle curved globe wireframe background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1380px] h-[584px] pointer-events-none opacity-80 select-none z-0">
         <img
@@ -89,7 +89,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Analytics Live Dashboard Telemetry Card */}
-        <motion.div variants={item} className="max-w-4xl mx-auto mt-14 sm:mt-16 text-left">
+        <motion.div variants={item} className="max-w-4xl mx-auto mt-10 sm:mt-12 text-left">
           <div className="relative">
             <div className="absolute -inset-6 bg-gradient-to-r from-[#2F6F5E]/10 via-[#F2A93B]/10 to-transparent blur-3xl rounded-[32px] -z-10" />
             <div className="rounded-[24px] border border-[rgba(20,20,28,0.10)] bg-white shadow-[0_16px_50px_-12px_rgba(20,20,28,0.09)] p-6 sm:p-9">

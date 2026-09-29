@@ -7,9 +7,9 @@ export default function HomeBlog() {
   const latestPosts = BLOG_POSTS.slice(0, 3);
 
   return (
-    <section className="py-20 sm:py-28 bg-[#FBF8F3]">
+    <section className="py-14 sm:py-20 bg-[#FBF8F3]">
       <div className="max-w-container mx-auto px-5 sm:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-10">
           <Reveal className="max-w-2xl">
             <div className="text-xs font-bold text-[#2F6F5E] uppercase tracking-wider mb-3">
               Knowledge & Insights
