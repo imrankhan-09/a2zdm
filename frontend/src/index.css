@@ -5,12 +5,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   @apply bg-paper text-ink font-body antialiased;
   background-color: #FBF8F3;
   color: #17171F;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {

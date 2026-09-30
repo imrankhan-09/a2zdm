@@ -1,4 +1,4 @@
-import { GraduationCap, Sparkles } from "lucide-react";
+import { GraduationCap, Sparkles, Mail } from "lucide-react";
 import { RevealItem } from "./Reveal";
 import { LinkedinIcon, TwitterIcon, GitHubIcon } from "./SocialIcons";
 
@@ -15,21 +15,21 @@ function initials(name) {
 export default function TeamCard({ member }) {
   return (
     <RevealItem className="h-full">
-      <article className="h-full rounded-xl border border-line bg-white p-8 hover:border-ink hover:-translate-y-1 transition-all duration-300">
-        <div className="flex flex-col sm:flex-row sm:items-start gap-6">
-          <div className="w-20 h-20 shrink-0 rounded-full bg-ink text-paper flex items-center justify-center font-display font-semibold text-xl">
+      <article className="h-full rounded-xl border border-line bg-white p-5 sm:p-8 hover:border-ink hover:-translate-y-1 transition-all duration-300">
+        <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6">
+          <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-full bg-ink text-paper flex items-center justify-center font-display font-semibold text-lg sm:text-xl">
             {initials(member.name)}
           </div>
-          <div className="flex-1">
-            <h3 className="font-display font-semibold text-2xl">{member.name}</h3>
-            <p className="text-sm font-semibold text-signal mt-1">
+          <div className="flex-1 min-w-0">
+            <h3 className="font-display font-semibold text-xl sm:text-2xl break-words">{member.name}</h3>
+            <p className="text-sm font-semibold text-signal mt-1 break-words">
               {member.role}
             </p>
-            <div className="flex flex-wrap gap-2 mt-3">
-              <span className="text-xs font-semibold text-teal bg-tealdim px-2.5 py-1 rounded-full">
+            <div className="flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3 mt-3">
+              <span className="whitespace-nowrap text-xs font-semibold text-teal bg-tealdim px-2.5 py-1 rounded-full shrink-0">
                 {member.experience} experience
               </span>
-              <span className="text-xs font-semibold text-inksoft bg-surface border border-line px-2.5 py-1 rounded-full">
+              <span className="text-xs font-semibold text-inksoft bg-surface border border-line px-2.5 py-1 rounded-full whitespace-normal sm:whitespace-nowrap break-words">
                 {member.expertise}
               </span>
             </div>
@@ -44,7 +44,15 @@ export default function TeamCard({ member }) {
             >
               <LinkedinIcon />
             </a>
-            {member.github ? (
+            {member.email ? (
+              <a
+                href={`mailto:${member.email}`}
+                aria-label={`Email ${member.name}`}
+                className="w-9 h-9 rounded-full border border-line flex items-center justify-center text-inksoft hover:bg-ink hover:text-paper hover:border-ink transition-colors"
+              >
+                <Mail size={15} />
+              </a>
+            ) : member.github ? (
               <a
                 href={member.github}
                 target="_blank"

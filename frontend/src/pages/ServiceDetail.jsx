@@ -16,6 +16,17 @@ import Reveal, { RevealGroup, RevealItem } from "../components/Reveal";
 import ServiceVisual from "../components/ServiceVisual";
 import { ALL_SERVICES, getServiceBySlug } from "../data/site";
 
+// lg columns chosen per item count so every "How We Do It" grid forms
+// balanced rows (4/5 = one row, 6/9 = three cols, 7/8 = four cols).
+const HOW_WE_DO_IT_COLS = {
+  4: "lg:grid-cols-4",
+  5: "lg:grid-cols-5",
+  6: "lg:grid-cols-3",
+  7: "lg:grid-cols-4",
+  8: "lg:grid-cols-4",
+  9: "lg:grid-cols-3",
+};
+
 function FaqAccordionItem({ faq, index }) {
   const [isOpen, setIsOpen] = useState(index === 0);
 
@@ -269,7 +280,7 @@ export default function ServiceDetail() {
             }`}
           >
             {/* Left Content */}
-            <div className={service.visualType === "none" ? "max-w-3xl" : "lg:col-span-7"}>
+            <div className={service.visualType === "none" ? "max-w-3xl w-full min-w-0" : "lg:col-span-7 w-full min-w-0"}>
               <Reveal>
                 <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#F2A93B]/15 border border-[#F2A93B]/30 text-[#F2A93B] text-xs font-semibold uppercase tracking-widest mb-6">
                   <Icon size={14} />
@@ -277,34 +288,34 @@ export default function ServiceDetail() {
                 </div>
 
                 {/* Primary H1 */}
-                <h1 className="font-display font-bold text-3xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.1] text-white">
+                <h1 className="font-display font-bold text-3xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.1] text-white break-words">
                   {service.h1 || service.name}
                 </h1>
 
                 {/* Subheadline if provided */}
                 {service.subheadline && (
-                  <p className="mt-4 text-lg sm:text-xl font-medium text-[#F2A93B] max-w-2xl leading-snug">
+                  <p className="mt-4 text-lg sm:text-xl font-medium text-[#F2A93B] max-w-2xl leading-snug break-words">
                     {service.subheadline}
                   </p>
                 )}
 
                 {/* Introduction or description */}
-                <p className="mt-4 text-base sm:text-lg text-white/75 max-w-2xl leading-relaxed">
+                <p className="mt-4 text-base sm:text-lg text-white/75 max-w-2xl leading-relaxed break-words">
                   {service.introduction || service.description}
                 </p>
 
                 {/* Dual Pill CTA Buttons */}
-                <div className="mt-8 flex flex-wrap items-center gap-4">
+                <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
                   <Link
                     to="/contact"
-                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-[40px] bg-[#F2A93B] text-[#17171F] text-sm font-semibold hover:bg-[#D98F1F] shadow-[0_12px_28px_-6px_rgba(242,169,59,0.35)] hover:-translate-y-0.5 transition-all duration-300"
+                    className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 rounded-[40px] bg-[#F2A93B] text-[#17171F] text-sm font-semibold hover:bg-[#D98F1F] shadow-[0_12px_28px_-6px_rgba(242,169,59,0.35)] hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto text-center"
                   >
                     Talk to an Expert
                     <ArrowUpRight size={16} />
                   </Link>
                   <Link
                     to="/case-studies"
-                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-[40px] border border-white/20 bg-white/5 text-white text-sm font-semibold hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+                    className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 rounded-[40px] border border-white/20 bg-white/5 text-white text-sm font-semibold hover:bg-white/10 hover:border-white/40 transition-all duration-300 w-full sm:w-auto text-center"
                   >
                     Explore Case Studies
                   </Link>
@@ -314,7 +325,7 @@ export default function ServiceDetail() {
 
             {/* Right Visual Card */}
             {service.visualType !== "none" && (
-              <div className="lg:col-span-5">
+              <div className="lg:col-span-5 w-full min-w-0">
                 <Reveal delay={0.12}>
                   <ServiceVisual
                     type={service.visualType || "seo"}
@@ -447,28 +458,53 @@ export default function ServiceDetail() {
             </Reveal>
 
             <RevealGroup
-              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"
+              className={`grid sm:grid-cols-2 gap-5 ${
+                service.howWeDoIt.layout === "rows-3"
+                  ? "lg:grid-cols-6"
+                  : HOW_WE_DO_IT_COLS[service.howWeDoIt.items.length] ||
+                    "lg:grid-cols-4"
+              }`}
               stagger={0.05}
             >
-              {service.howWeDoIt.items.map((item, idx) => (
-                <RevealItem key={idx} className="h-full">
-                  <div className="h-full rounded-2xl bg-white border border-[#17171F]/10 p-6 sm:p-7 flex flex-col justify-between hover:border-[#2F6F5E]/40 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
-                    <div>
-                      <div className="flex items-center justify-between mb-4">
-                        <span className="w-10 h-10 rounded-xl bg-[#2F6F5E]/10 text-[#2F6F5E] flex items-center justify-center">
-                          <CheckCircle2 size={20} />
+              {service.howWeDoIt.items.map((item, idx) => {
+                const howItems = service.howWeDoIt.items;
+                const isRows3 = service.howWeDoIt.layout === "rows-3";
+                // 6-col grid: each card spans 2; a trailing pair starts one
+                // slot in so the final short row sits centered under the first.
+                const trailingPairStart =
+                  howItems.length % 3 === 2
+                    ? Math.floor(howItems.length / 3) * 3
+                    : -1;
+                return (
+                  <RevealItem
+                    key={idx}
+                    className={[
+                      "h-full",
+                      howItems.length % 2 === 1 &&
+                        idx === howItems.length - 1
+                        ? "sm:col-span-2"
+                        : "",
+                      isRows3 ? "lg:col-span-2" : "",
+                      isRows3 && idx === trailingPairStart
+                        ? "lg:col-start-2"
+                        : "",
+                    ]
+                      .filter(Boolean)
+                      .join(" ")}
+                  >
+                    <div className="h-full rounded-2xl bg-white border border-[#17171F]/10 p-6 sm:p-7 flex flex-col justify-between hover:border-[#2F6F5E]/40 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                      <div>
+                        <span className="w-10 h-10 rounded-full bg-[#2F6F5E]/10 text-[#2F6F5E] flex items-center justify-center font-mono text-sm font-semibold mb-4">
+                          {String(idx + 1).padStart(2, "0")}
                         </span>
-                        <span className="font-mono text-xs font-semibold text-[#5C5C6F]">
-                          0{idx + 1}
-                        </span>
+                        <h3 className="font-display font-semibold text-base sm:text-lg text-[#17171F] leading-snug">
+                          {item}
+                        </h3>
                       </div>
-                      <h3 className="font-display font-semibold text-base sm:text-lg text-[#17171F] leading-snug">
-                        {item}
-                      </h3>
                     </div>
-                  </div>
-                </RevealItem>
-              ))}
+                  </RevealItem>
+                );
+              })}
             </RevealGroup>
           </div>
         </section>

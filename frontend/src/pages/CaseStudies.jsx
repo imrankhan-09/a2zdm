@@ -47,16 +47,16 @@ export default function CaseStudies() {
               Discover how we've helped businesses break through digital barriers
               with data-driven strategies, measurable ROI, and precision execution.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-start">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-[40px] bg-[#F2A93B] hover:bg-[#D98F1F] text-[#17171F] font-semibold text-sm transition-colors shadow-lg"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-[40px] bg-[#F2A93B] hover:bg-[#D98F1F] text-[#17171F] font-semibold text-sm transition-colors shadow-lg w-full sm:w-auto text-center"
               >
                 Start Your Success Story <ArrowUpRight size={16} />
               </Link>
               <Link
                 to="/services"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-[40px] bg-white/10 hover:bg-white/15 text-white font-semibold text-sm transition-colors border border-white/15"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-[40px] bg-white/10 hover:bg-white/15 text-white font-semibold text-sm transition-colors border border-white/15 w-full sm:w-auto text-center"
               >
                 Our Services
               </Link>

@@ -207,6 +207,7 @@ export const ALL_SERVICES = [
     },
     howWeDoIt: {
       heading: "How We Do It",
+      layout: "rows-3",
       items: [
         "Fixing Crawl Errors",
         "Resolve on-site issues",
@@ -4179,6 +4180,42 @@ export const TEAM = [
     funFact: "Competitive chess player in college",
     linkedin: "https://linkedin.com/in/zeeshanahmed",
     github: "https://github.com/zeeshanahmed",
+  },
+  {
+    name: "Mohammad Saif Khan",
+    role: "Digital Analytics & Marketing Analytics Specialist",
+    experience: "2+ years",
+    expertise: "Digital Analytics & Data Analytics",
+    description:
+      "Digital Analytics and Marketing Analytics professional specializing in Google Tag Manager (GTM), Google Analytics, Google BigQuery and SQL. Experienced in implementing and maintaining website tracking, analyzing user behavior and campaign performance, building Looker Studio dashboards, and transforming data into actionable insights. Strong in cross-functional collaboration and analytics implementation, with hands-on technical knowledge that supports effective collaboration with engineering and product teams.",
+    certifications: [
+      "Google Tag Manager (GTM)",
+      "Google Analytics",
+      "Google BigQuery & SQL",
+      "Looker Studio",
+      "Power BI",
+    ],
+    funFact:
+      "I enjoy turning complex data into simple, actionable insights and exploring new technologies that make analytics more efficient.",
+    linkedin: "https://www.linkedin.com/in/mdsaifkhan10",
+    email: "imohammadsaifkhan@gmail.com",
+  },
+  {
+    name: "Imran Khan",
+    role: "Full Stack Developer & Data Analytics Specialist",
+    experience: "1+ year",
+    expertise: "Full Stack Development & Data Analytics",
+    description:
+      "Full Stack Developer with 1+ year of experience in building modern, responsive and user-focused web applications using React.js, Node.js, Express.js, PostgreSQL and MongoDB. I also work with Google Analytics 4 (GA4), Google Tag Manager (GTM), event tracking and website analytics to understand user behavior, measure website performance and support data-driven digital decisions.",
+    certifications: [
+      "Full Stack Web Development",
+      "Google Analytics 4 (GA4)",
+      "Google Tag Manager (GTM)",
+    ],
+    funFact:
+      "I enjoy turning ideas into real-world web applications and continuously exploring new technologies, AI tools and data-driven solutions.",
+    linkedin: "https://www.linkedin.com/in/imran-khan-b87a8b235",
+    email: "imrqankhan.ca2020@gmail.com",
   },
 ];
 

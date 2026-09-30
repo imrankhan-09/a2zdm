@@ -249,14 +249,14 @@ export default function CaseStudyDetail() {
                 <CheckCircle2 size={20} className="text-[#2F6F5E]" />
                 Results at a Glance
               </h2>
-              <div className={`grid gap-4 ${study.results.length > 4 ? "grid-cols-2 sm:grid-cols-3" : "sm:grid-cols-2"}`}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
                 {study.results.map((r, i) => (
                   <div
                     key={i}
-                    className="bg-white rounded-[14px] border border-[rgba(20,20,28,0.08)] px-5 py-4"
+                    className="bg-white rounded-[14px] border border-[rgba(20,20,28,0.08)] px-4 sm:px-5 py-3.5 sm:py-4"
                   >
-                    <div className="text-xs text-[#5C5C6F] font-medium mb-1">{r.label}</div>
-                    <div className="text-base font-bold text-[#17171F]">{r.value}</div>
+                    <div className="text-xs text-[#5C5C6F] font-medium mb-1 break-words">{r.label}</div>
+                    <div className="text-base font-bold text-[#17171F] break-words">{r.value}</div>
                   </div>
                 ))}
               </div>

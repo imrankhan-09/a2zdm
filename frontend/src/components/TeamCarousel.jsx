@@ -17,7 +17,7 @@ export default function TeamCarousel({ members }) {
   const next = () => setIndex((i) => (i + 1) % members.length);
 
   return (
-    <div className="relative max-w-3xl mx-auto px-10 sm:px-14">
+    <div className="relative max-w-3xl mx-auto px-6 sm:px-14">
       {/* Viewport — clips overflowing cards */}
       <div className="overflow-hidden">
         {/* Sliding strip — width = 100% × number of cards */}
@@ -43,9 +43,9 @@ export default function TeamCarousel({ members }) {
           type="button"
           onClick={prev}
           aria-label="Previous team member"
-          className="absolute top-1/2 -translate-y-1/2 left-0 z-10 w-11 h-11 rounded-full bg-[#17171F] text-white shadow-lg flex items-center justify-center hover:bg-[#F2A93B] hover:text-[#17171F] transition-colors"
+          className="absolute top-1/2 -translate-y-1/2 left-0 z-10 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#17171F] text-white shadow-lg flex items-center justify-center hover:bg-[#F2A93B] hover:text-[#17171F] transition-colors"
         >
-          <ArrowLeft size={18} />
+          <ArrowLeft size={16} />
         </button>
       )}
 
@@ -55,9 +55,9 @@ export default function TeamCarousel({ members }) {
           type="button"
           onClick={next}
           aria-label="Next team member"
-          className="absolute top-1/2 -translate-y-1/2 right-0 z-10 w-11 h-11 rounded-full bg-[#17171F] text-white shadow-lg flex items-center justify-center hover:bg-[#F2A93B] hover:text-[#17171F] transition-colors"
+          className="absolute top-1/2 -translate-y-1/2 right-0 z-10 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#17171F] text-white shadow-lg flex items-center justify-center hover:bg-[#F2A93B] hover:text-[#17171F] transition-colors"
         >
-          <ArrowRight size={18} />
+          <ArrowRight size={16} />
         </button>
       )}
 

@@ -151,7 +151,7 @@ export default function Contact() {
 
           {/* Right Column — Form */}
           <Reveal delay={0.1}>
-            <div className="rounded-3xl border border-[#17171F]/8 bg-white shadow-[0_20px_60px_-12px_rgba(20,20,28,0.1)] p-8 sm:p-10">
+            <div className="rounded-2xl sm:rounded-3xl border border-[#17171F]/8 bg-white shadow-[0_20px_60px_-12px_rgba(20,20,28,0.1)] p-5 sm:p-10">
               {sent ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center gap-4">
                   <div className="w-16 h-16 rounded-full bg-[#2F6F5E]/15 flex items-center justify-center">

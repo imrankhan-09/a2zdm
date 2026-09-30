@@ -52,16 +52,16 @@ export default function About() {
               in Indore, India. We help ambitious businesses unlock sustainable
               growth by connecting marketing activity directly to revenue outcomes.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
               <Link
                 to="/services"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-[40px] bg-[#F2A93B] hover:bg-[#D98F1F] text-[#17171F] font-semibold text-sm transition-colors shadow-lg"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-[40px] bg-[#F2A93B] hover:bg-[#D98F1F] text-[#17171F] font-semibold text-sm transition-colors shadow-lg w-full sm:w-auto text-center"
               >
                 Explore Our Services <ArrowUpRight size={16} />
               </Link>
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-[40px] bg-white/10 hover:bg-white/15 text-white font-semibold text-sm transition-colors border border-white/15"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-[40px] bg-white/10 hover:bg-white/15 text-white font-semibold text-sm transition-colors border border-white/15 w-full sm:w-auto text-center"
               >
                 Get in Touch
               </Link>

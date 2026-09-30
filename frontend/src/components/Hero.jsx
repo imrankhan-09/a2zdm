@@ -71,17 +71,17 @@ export default function Hero() {
           and digital marketing strategies with results you can measure.
         </motion.p>
 
-        <motion.div variants={item} className="mt-9 flex flex-wrap items-center justify-center gap-4">
+        <motion.div variants={item} className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <Link
             to="/services"
-            className="group px-8 py-4 rounded-full bg-[#F2A93B] hover:bg-[#D98F1F] text-[#17171F] font-semibold text-sm sm:text-base transition-all duration-200 shadow-sm hover:shadow-md hover:scale-[1.02] inline-flex items-center justify-center gap-2"
+            className="group px-8 py-4 rounded-full bg-[#F2A93B] hover:bg-[#D98F1F] text-[#17171F] font-semibold text-sm sm:text-base transition-all duration-200 shadow-sm hover:shadow-md hover:scale-[1.02] inline-flex items-center justify-center gap-2 w-full sm:w-auto text-center"
           >
             Explore Our Services
             <ArrowUpRight size={17} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </Link>
           <Link
             to="/case-studies"
-            className="group px-8 py-4 rounded-full bg-white hover:bg-[#F3EEE1] text-[#17171F] border border-[rgba(20,20,28,0.15)] font-semibold text-sm sm:text-base transition-all duration-200 shadow-sm hover:scale-[1.02] inline-flex items-center justify-center gap-2"
+            className="group px-8 py-4 rounded-full bg-white hover:bg-[#F3EEE1] text-[#17171F] border border-[rgba(20,20,28,0.15)] font-semibold text-sm sm:text-base transition-all duration-200 shadow-sm hover:scale-[1.02] inline-flex items-center justify-center gap-2 w-full sm:w-auto text-center"
           >
             Explore Case Studies
             <ArrowUpRight size={17} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -92,7 +92,7 @@ export default function Hero() {
         <motion.div variants={item} className="max-w-4xl mx-auto mt-10 sm:mt-12 text-left">
           <div className="relative">
             <div className="absolute -inset-6 bg-gradient-to-r from-[#2F6F5E]/10 via-[#F2A93B]/10 to-transparent blur-3xl rounded-[32px] -z-10" />
-            <div className="rounded-[24px] border border-[rgba(20,20,28,0.10)] bg-white shadow-[0_16px_50px_-12px_rgba(20,20,28,0.09)] p-6 sm:p-9">
+            <div className="rounded-[24px] border border-[rgba(20,20,28,0.10)] bg-white shadow-[0_16px_50px_-12px_rgba(20,20,28,0.09)] p-5 sm:p-9">
               <div className="flex flex-wrap items-center justify-between gap-4 mb-7 pb-5 border-b border-[rgba(20,20,28,0.08)]">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-[#2F6F5E]/10 text-[#2F6F5E] flex items-center justify-center">
@@ -134,10 +134,10 @@ export default function Hero() {
               </div>
 
               {/* 4 Key Stat Tiles */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mt-8 pt-6 border-t border-[rgba(20,20,28,0.08)]">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 mt-8 pt-6 border-t border-[rgba(20,20,28,0.08)]">
                 {STATS.map((s) => (
-                  <div key={s.label} className="p-3.5 rounded-xl bg-[#FBF8F3] border border-[rgba(20,20,28,0.06)]">
-                    <div className="font-mono text-2xl sm:text-3xl font-bold text-[#2F6F5E]">
+                  <div key={s.label} className="p-2.5 sm:p-3.5 rounded-xl bg-[#FBF8F3] border border-[rgba(20,20,28,0.06)]">
+                    <div className="font-mono text-xl sm:text-3xl font-bold text-[#2F6F5E]">
                       <CountUp value={s.value} decimals={s.decimals || 0} suffix={s.suffix} duration={1.6} />
                     </div>
                     <div className="text-xs text-[#5C5C6F] font-medium mt-1">{s.label}</div>

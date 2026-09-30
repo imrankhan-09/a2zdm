@@ -250,17 +250,17 @@ export default function ServicesPage() {
               Comprehensive MarTech solutions designed to elevate organic search,
               unify analytics pipelines, and scale high-ROAS marketing campaigns.
             </p>
-            <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
+            <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-[40px] bg-[#F2A93B] text-[#17171F] font-semibold text-sm hover:bg-[#D98F1F] shadow-[0_12px_28px_-6px_rgba(242,169,59,0.35)] hover:-translate-y-0.5 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[40px] bg-[#F2A93B] text-[#17171F] font-semibold text-sm hover:bg-[#D98F1F] shadow-[0_12px_28px_-6px_rgba(242,169,59,0.35)] hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto text-center"
               >
                 Talk to an Expert
                 <ArrowUpRight size={16} />
               </Link>
               <Link
                 to="/case-studies"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-[40px] border border-white/20 bg-white/5 text-white font-semibold text-sm hover:bg-white/10 hover:border-white/40 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[40px] border border-white/20 bg-white/5 text-white font-semibold text-sm hover:bg-white/10 hover:border-white/40 transition-all duration-300 w-full sm:w-auto text-center"
               >
                 Explore Client Results
               </Link>
