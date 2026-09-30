@@ -4148,23 +4148,6 @@ export const CASE_STUDIES = [
 
 export const TEAM = [
   {
-    name: "Ateeq Patel",
-    role: "Founder & CEO",
-    experience: "8+ years",
-    expertise: "Web Analytics and Digital Marketing",
-    description:
-      "Digital marketing veteran with extensive experience in helping businesses grow through data-driven strategies. Founded the company with a vision to bridge the gap between analytics and actionable insights.",
-    education: "MBA in Digital Marketing, University of London",
-    certifications: [
-      "Google Analytics Certified",
-      "Google Ads Certified",
-      "HubSpot Content Marketing Certified",
-    ],
-    funFact: "Ran a successful food blog before transitioning to digital marketing",
-    linkedin: "https://in.linkedin.com/company/a2zdm",
-    twitter: "https://x.com/a2zdm",
-  },
-  {
     name: "Zeeshan Ahmed",
     role: "Head of Analytics",
     experience: "6+ years",
@@ -4216,6 +4199,15 @@ export const TEAM = [
       "I enjoy turning ideas into real-world web applications and continuously exploring new technologies, AI tools and data-driven solutions.",
     linkedin: "https://www.linkedin.com/in/imran-khan-b87a8b235",
     email: "imrqankhan.ca2020@gmail.com",
+  },
+  {
+    name: "Fiza Khan",
+    role: "SEO Analyst",
+    experience: "2 years",
+    expertise: "SEO and Digital Marketing",
+    description:
+      "Experienced in digital marketing and SEO, with a focus on improving online visibility, search performance, and organic growth. Skilled in developing and implementing effective SEO strategies to support business goals.",
+    education: "Bachelor's in Computer Applications, DAVV",
   },
 ];
 

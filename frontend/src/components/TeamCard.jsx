@@ -35,15 +35,17 @@ export default function TeamCard({ member }) {
             </div>
           </div>
           <div className="flex gap-2.5">
-            <a
-              href={member.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${member.name} on LinkedIn`}
-              className="w-9 h-9 rounded-full border border-line flex items-center justify-center text-inksoft hover:bg-ink hover:text-paper hover:border-ink transition-colors"
-            >
-              <LinkedinIcon />
-            </a>
+            {member.linkedin && (
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${member.name} on LinkedIn`}
+                className="w-9 h-9 rounded-full border border-line flex items-center justify-center text-inksoft hover:bg-ink hover:text-paper hover:border-ink transition-colors"
+              >
+                <LinkedinIcon />
+              </a>
+            )}
             {member.email ? (
               <a
                 href={`mailto:${member.email}`}
@@ -103,21 +105,23 @@ export default function TeamCard({ member }) {
           </div>
         )}
 
-        <div className="mt-5">
-          <div className="text-xs font-semibold text-slate uppercase tracking-wide mb-2">
-            Certifications
+        {member.certifications && member.certifications.length > 0 && (
+          <div className="mt-5">
+            <div className="text-xs font-semibold text-slate uppercase tracking-wide mb-2">
+              Certifications
+            </div>
+            <ul className="flex flex-wrap gap-2">
+              {member.certifications.map((c) => (
+                <li
+                  key={c}
+                  className="text-xs font-medium text-signal bg-signaldim px-2.5 py-1 rounded-full"
+                >
+                  {c}
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul className="flex flex-wrap gap-2">
-            {member.certifications.map((c) => (
-              <li
-                key={c}
-                className="text-xs font-medium text-signal bg-signaldim px-2.5 py-1 rounded-full"
-              >
-                {c}
-              </li>
-            ))}
-          </ul>
-        </div>
+        )}
       </article>
     </RevealItem>
   );
