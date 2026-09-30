@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { TrendingUp, Activity, ArrowUpRight } from "lucide-react";
 import CountUp from "./CountUp";
 
+import heroBannerGlobeSvg from "../assets/hero-banner-globe.svg";
+
 const BARS = [
   { label: "Organic Traffic", value: 85, color: "#2F6F5E" },
   { label: "Conversion Rate", value: 72, color: "#F2A93B" },
@@ -32,7 +34,7 @@ export default function Hero() {
       {/* Subtle curved globe wireframe background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1380px] h-[584px] pointer-events-none opacity-80 select-none z-0">
         <img
-          src="/src/assets/hero-banner-globe.svg"
+          src={heroBannerGlobeSvg}
           alt=""
           className="w-full h-full object-cover object-top"
           aria-hidden="true"
